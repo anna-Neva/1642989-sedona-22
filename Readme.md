@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна](https://up.htmlacademy.ru/adaptive/22/user/1642989).
-* Наставник: [Алексей Хабиров].
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
