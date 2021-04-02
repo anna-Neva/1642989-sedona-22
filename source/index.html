@@ -2,10 +2,12 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Сайт городка sedona</title>
 </head>
 <body class="page__body">
     <header class="page-header">
+      <div class="header__container">
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
       </a>
@@ -16,32 +18,33 @@
         </span>
         </button>
         <div class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>
+          <ul class="main-nav__list reset-list">
+            <li class="site-list">
+              <a class="site-list__item">
                Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
+            <li class="site-list">
+              <a class="site-list__item" href="catalog.html">
                Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">
+            <li class="site-list">
+              <a class="site-list__item" href="form.html">
                Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="site-list">
+              <a class="site-list__item" href="#">
                HTML Academy
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main__container">
       <h1 class="visually-hidden">
         Сайт туристического городка Sedona
       </h1>
@@ -57,15 +60,15 @@
         </p>
       </section>
       <section class="features">
-        <ul class="features__list">
-          <li class="features__item">
-            <p class="features__slogan">
+        <ul class="features__list  reset-list">
+          <li class="features__item features__item--color">
+            <p class="features__slogan features__slogan--color">
               Настоящий городок
             </p>
-            <span class="features__description">
+            <span class="features__description features__description--color">
               - №1 -
             </span>
-            <p class="features__intro">
+            <p class="features__intro features__intro--color">
               Седона не атракцион для туристов, там
               течет своя жизнь
             </p>
@@ -75,7 +78,7 @@
           <h2 class="visually-hidden">
             Совет
           </h2>
-          <ul class="advice__list">
+          <ul class="advice__list reset-list">
             <li class="advice__item advice__item--lodging">
               <h3 class="advice__title">
                 Жилье
@@ -106,15 +109,15 @@
             </li>
           </ul>
         </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <p class="features__slogan">
+        <ul class="features__list reset-list">
+          <li class="features__item features__item--color">
+            <p class="features__slogan features__slogan--color">
               Там есть мост дьявола
             </p>
-            <span class="features__description">
+            <span class="features__description features__description--color">
               - №2 -
             </span>
-            <p class="features__intro">
+            <p class="features__intro features__intro--color">
               Да, по нему можно пройти! если вы
               осмелитесь конечно
             </p>
@@ -181,16 +184,19 @@
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+            <img src="img/icon-twitter.svg" width="18" height="15" alt="TW">
           Мы в Твиттере
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-facebook.svg" width="9" height="20" alt="FB">
            Мы в Фейсбуке
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-youtube.svg" width="20" height="14" alt="YT">
            Мы в Ютубе
           </a>
         </li>

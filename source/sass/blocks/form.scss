@@ -1,0 +1,21 @@
+.form {
+  width: 320px;
+  height: 287px;
+  text-align: center;
+}
+
+.form__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $light-black;
+  margin-bottom: 50px;
+}

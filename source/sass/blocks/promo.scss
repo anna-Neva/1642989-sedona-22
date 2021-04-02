@@ -1,0 +1,26 @@
+.promo__slogan {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-weight: bold;
+  text-align: center;
+}
+
+.promo__intro {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $light-black;
+  text-align: center;
+}
+
+.promo {
+  margin-top: 450px;
+  margin-left: 17px;
+  width: 320px;
+  height: 180px;
+  align-items: center;
+  text-transform: uppercase;
+  // margin: 500px auto;
+  // width: 320px;
+}

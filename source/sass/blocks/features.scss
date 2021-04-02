@@ -1,0 +1,52 @@
+.features__list {
+  margin-top: 27px;
+  text-align: center;
+}
+
+.features__slogan {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $light-black;
+}
+
+.features__intro {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $light-black;
+}
+
+.features__item {
+  width: 320px;
+  height: 191px;
+  padding-top: 40px;
+  background-color: $light-gray;
+}
+
+.features__item--color {
+  background-color: $blue;
+  width: 320px;
+  height: 210px;
+  color: $white;
+}
+
+.eatures__slogan--color {
+  color: $white;
+}
+
+.features__description--color {
+  color: $white;
+}
+
+.features__intro--color {
+  color: $white;
+}

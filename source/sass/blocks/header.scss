@@ -1,0 +1,21 @@
+  .page-header {
+    box-sizing: border-box;
+    padding-top: 17px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+  }
+
+  .page-header__logo {
+    margin-left: 109px;
+    margin-right: auto;
+    margin-top: 223px;
+  }
+
+  .header__container {
+    margin: 223px auto;
+    width: 320px;
+  }

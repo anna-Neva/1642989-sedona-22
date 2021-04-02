@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/pt-sans-narrow.woff2") format("woff2"),
+       url("../fonts/pt-sans-narrow.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2"),
+       url("../fonts/pt-sans-narrow-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Narrow";
+  src: url("../fonts/roboto-narrow.woff2") format("woff2"),
+       url("../fonts/pt-sans-narrow.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
