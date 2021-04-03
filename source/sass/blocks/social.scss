@@ -1,0 +1,17 @@
+.social {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 34px;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 151px;
+}
+
+.icon__link {
+    width: 46px;
+    height: 48px;
+    background-color: $blue;
+}
+    
