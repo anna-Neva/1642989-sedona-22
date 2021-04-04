@@ -1,0 +1,38 @@
+.features__list {
+  margin-top: 27px;
+  text-align: center;
+}
+
+.features__slogan {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.features__description {
+  margin: 0;
+}
+
+.features__intro {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $light-black;
+}
+
+.features__item {
+  padding-top: 40px;
+  background-color: $light-gray;
+}
+
+.features__item--color {
+  background-color: $blue;
+  color: $white;
+}
+
+.features__item--color .features__description,
+.features__item--color .features__intro {
+  color: white;
+}
