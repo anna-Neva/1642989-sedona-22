@@ -1,0 +1,19 @@
+.feedback__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feedback__descriptions {
+  font-size: 14px;
+  line-height: 24px;
+  color: $light-black;
+}
+
+.feedback__banner {
+  margin: 0;
+  padding: 108px 0 67px;
+  background-image: url("../img/content-feedback.png");
+  background-repeat: no-repeat;
+}

@@ -6,7 +6,7 @@
   margin: 0;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .form__text {
@@ -17,3 +17,16 @@
   margin-bottom: 50px;
 }
 
+.form__name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form__label {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: $light-black;
+}
