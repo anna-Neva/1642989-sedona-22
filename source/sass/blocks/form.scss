@@ -33,12 +33,20 @@
   line-height: 26px;
   color: $light-black;
   text-transform: uppercase;
+  border: none;
+}
+
+.form__input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  border: none;
 }
 
 .form__item {
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .form__textarea {
