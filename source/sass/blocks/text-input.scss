@@ -3,4 +3,12 @@
   line-height: 26px;
   font-weight: bold;
   color: $black;
+  border: none;
+}
+
+::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
 }
