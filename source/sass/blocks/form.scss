@@ -33,7 +33,6 @@
   line-height: 26px;
   color: $light-black;
   text-transform: uppercase;
-  border: none;
 }
 
 .form__input {
@@ -47,6 +46,7 @@
 .form__item {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .form__textarea {
