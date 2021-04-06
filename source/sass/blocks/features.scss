@@ -7,7 +7,8 @@
   margin: 0;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .features__description {
@@ -20,6 +21,7 @@
   line-height: 21px;
   font-weight: 400;
   color: $light-black;
+  text-transform: uppercase;
 }
 
 .features__item {
@@ -34,5 +36,5 @@
 
 .features__item--color .features__description,
 .features__item--color .features__intro {
-  color: white;
+  color: $white;
 }

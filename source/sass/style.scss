@@ -1,5 +1,6 @@
 //Global
 
+@import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
@@ -20,3 +21,8 @@
 @import "blocks/button.scss";
 @import "blocks/map.scss";
 @import "blocks/page-main.scss";
+@import "blocks/feedback.scss";
+@import "blocks/radio-button.scss";
+@import "blocks/text-input.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/button-send.scss";
