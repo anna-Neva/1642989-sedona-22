@@ -1,3 +1,20 @@
+.advice__list {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    max-width: 768px;
+    display: flex;
+  }
+}
+
 .advice__title {
   margin: 0;
   font-size: 18px;

@@ -1,3 +1,13 @@
+.promo {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 124px;
+  }
+}
+
 .promo__banner {
   padding: 90px 0 85px;
   background-image: url("../img/content-promo.png");
@@ -12,6 +22,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -30,4 +41,3 @@
   line-height: 24px;
   text-transform: uppercase;
 }
-

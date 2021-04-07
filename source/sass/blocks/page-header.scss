@@ -1,0 +1,39 @@
+.page-header {
+  min-height: 56px;
+  background-color: $very-light-gray;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  height: 84px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    order: 1;
+    height: 84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  height: 97px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+

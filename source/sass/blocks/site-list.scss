@@ -1,3 +1,8 @@
+.site-list {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
 .site-list__link {
   font-size: 18px;
   line-height: 40px;
@@ -8,4 +13,10 @@
 
 .site-list__item {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 320px;
+  }
 }

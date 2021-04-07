@@ -38,3 +38,57 @@
 .features__item--color .features__intro {
   color: $white;
 }
+
+.features__first {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+  margin: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: $tablet-width) {
+  margin: auto;
+  max-width: 768px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  }
+}
+
+.features__second {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  }
+
+  @media (min-width: $tablet-width) {
+  margin: auto;
+  max-width: 768px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  }
+}
+
+.features__third {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+  margin: auto;
+  max-width: 768px;
+  display: flex;
+  }
+}

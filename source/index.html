@@ -11,34 +11,34 @@
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav__container">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
         </button>
-        <ul class="main-nav__list site-list reset-list">
-          <li class="site-list__item">
-            <a class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+          <ul class="main-nav__list site-list reset-list">
+            <li class="site-list__item">
+              <a class="site-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
       </nav>
     </div>
   </header>
@@ -63,22 +63,24 @@
         </div>
       </section>
       <section class="features">
-        <ul class="features__list  reset-list">
-          <li class="features__item features__item--color">
-            <p class="features__slogan features__slogan--color">
-              Настоящий городок
-            </p>
-            <span class="features__description features__description--color">
-              - №1 -
-            </span>
-            <p class="features__intro features__intro--color">
-              Седона не атракцион для туристов, там
-              течет своя жизнь
-            </p>
-          </li>
-        </ul>
-        <div>
-          <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+        <div class="features__first">
+          <ul class="features__list  reset-list">
+            <li class="features__item features__item--color">
+              <p class="features__slogan features__slogan--color">
+                Настоящий городок
+              </p>
+              <span class="features__description features__description--color">
+                - №1 -
+              </span>
+              <p class="features__intro features__intro--color">
+                Седона не атракцион для туристов, там
+                течет своя жизнь
+              </p>
+            </li>
+          </ul>
+          <div>
+            <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+          </div>
         </div>
         <div class="advice">
           <h2 class="visually-hidden">
@@ -115,56 +117,63 @@
             </li>
           </ul>
         </div>
-        <ul class="features__list reset-list">
-          <li class="features__item features__item--color">
-            <p class="features__slogan features__slogan--color">
-              Там есть мост дьявола
-            </p>
-            <span class="features__description features__description--color">
-              - №2 -
-            </span>
-            <p class="features__intro features__intro--color">
-              Да, по нему можно пройти! если вы
-              осмелитесь конечно
-            </p>
-          </li>
-          <li class="features__item">
-            <p class="features__slogan">
-              Небольшая площадь
-            </p>
-            <span class="features__description">
-              - №3 -
-            </span>
-            <p class="features__intro">
-              Все интересные места находятся
-              очень близко
-            </p>
-          </li>
-          <li class="features__item">
-            <p class="features__slogan">
-              Красивая дорога
-            </p>
-            <span class="features__description">
-              - №4 -
-            </span>
-            <p class="features__intro">
-              Ехать в Седону из Лас-вегаса
-              совсем не скучно!
-            </p>
-          </li>
-          <li class="features__item">
-            <p class="features__slogan">
-              Мало туристов
-            </p>
-            <span class="features__description">
-              - №5 -
-            </span>
-            <p class="features__intro">
-              Большинство едет в Гранд Каньон
-              и толпится там
-            </p>
-          </li>
-        </ul>
+        <section class="features__list reset-list">
+          <ul class="features__second reset-list">
+            <li class="features__item features__item--color">
+              <p class="features__slogan features__slogan--color">
+                Там есть мост дьявола
+              </p>
+              <span class="features__description features__description--color">
+                - №2 -
+              </span>
+              <p class="features__intro features__intro--color">
+                Да, по нему можно пройти! если вы
+                осмелитесь конечно
+              </p>
+            </li>
+            <li class="feature__promo">
+              <img src="img/photo-bridge-mobile.jpg" alt="Фото мост">
+            </li>
+          </ul>
+          <ul class="features__third reset-list">
+            <li class="features__item">
+              <p class="features__slogan">
+                Небольшая площадь
+              </p>
+              <span class="features__description">
+                - №3 -
+              </span>
+              <p class="features__intro">
+                Все интересные места находятся
+                очень близко
+              </p>
+            </li>
+            <li class="features__item">
+              <p class="features__slogan">
+                Красивая дорога
+              </p>
+              <span class="features__description">
+                - №4 -
+              </span>
+              <p class="features__intro">
+                Ехать в Седону из Лас-вегаса
+                совсем не скучно!
+              </p>
+            </li>
+            <li class="features__item">
+              <p class="features__slogan">
+                Мало туристов
+              </p>
+              <span class="features__description">
+                - №5 -
+              </span>
+              <p class="features__intro">
+                Большинство едет в Гранд Каньон
+                и толпится там
+              </p>
+            </li>
+          </ul>
+        </section>
       </section>
         <div class="form">
           <h2 class="form__title">
@@ -175,7 +184,7 @@
             поездки, и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-            <a class="button" href="#">
+            <a class="button" href="blank.html">
               Найти гостиницу
             </a>
         </div>
@@ -183,7 +192,7 @@
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050597228!2d-111.83015797418973!3d34.8543733810389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20Arizona%2086336%2C%20Stati%20Uniti!5e0!3m2!1sit!2suk!4v1616789086260!5m2!1sit!2suk" width="600" height="450"></iframe>
         </div>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer__container">
     <p class="page-footer__hashtag">
       #visitSEDONA
     </p>
