@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+@media (min-width: $desktop-width) {
+  .form {
+    // margin: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    // margin: auto;
+    padding: 0 17px;
+  }
+}
+
 .form__title {
   margin: 0;
   font-size: 21px;

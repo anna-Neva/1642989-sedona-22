@@ -1,5 +1,4 @@
 .main-nav {
-  background-color: $blue;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
@@ -8,21 +7,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
+
 
 @media (min-width: $tablet-width) {
-  .main-nav__container {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
+  .main-nav__list a {
+  padding-top: 16px;
+  width: 100%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__container {
-    width: 1200px;
-  }
-}
+
+// .maine-nav__list :first-child {
+//   margin-right: 47px;
+//   }
+

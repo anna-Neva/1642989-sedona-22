@@ -12,11 +12,28 @@
 }
 
 .site-list__item {
-  text-align: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 320px;
+    display: flex;
   }
+
+  .site-list__item {
+    width: 153px;
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    width: 239px;
+  }
+
 }
