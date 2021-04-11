@@ -1,16 +1,40 @@
-.map__iframe {
+.map {
   width: 320px;
   height: 350px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
-  width: 100%;
   margin: 0 auto;
+  background-size: cover;
 }
 
+
+// .map__iframe {
+//   width: 320px;
+//   height: 350px;
+//   background-image: url("../img/map-mobile.jpg");
+//   background-repeat: no-repeat;
+//   margin: 0 auto;
+//   background-size: cover;
+// }
+
 @media (min-width: $tablet-width) {
-  .map__iframe {
-    margin: auto;
+  .map {
     max-width: 100%;
+    width: 768px;
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map {
+    max-width: 100%;
+    width: 1200px;
+    background-image: url("../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+  }
+}

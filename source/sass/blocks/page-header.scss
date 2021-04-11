@@ -38,14 +38,11 @@
   }
 
   .page-header__bar {
-    display: none;
+    // display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-  height: 97px;
-  }
 }
 
 

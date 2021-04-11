@@ -7,8 +7,7 @@
     <title>Сайт городка sedona</title>
   </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__container">
+  <header class="page-header container">
       <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип седона">
       </a>
@@ -18,36 +17,43 @@
             Открыть меню
           </span>
         </button>
-        <ul class="main-nav__list site-list reset-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <nav class="page-header__nave main-nav">
+          <ul class="main-nav__list site-list reset-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__bar">
+          <!-- <button class="page-header__menu-button" aria-label="Меню">
+          </button> -->
+        </div>
   </header>
   <main class="page-main page-main__container">
+    <div class="feedback__banner">
+      <img src="img/banner-mobile.svg" width="229" height="39" alt="Седона">
+    </div>
     <h1 class="visually-hidden">
       Фото и видео городка Sedona
     </h1>
-    <section class="promo">
+    <section class="promo__description">
       <p class="promo__slogan">
         Фото и видео
       </p>

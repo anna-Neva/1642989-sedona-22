@@ -16,6 +16,18 @@
 .feedback__banner {
   margin: 0;
   padding: 108px 0 67px;
-  background-image: url("../img/content-feedback.png");
+  background-image: url("../img/content-feedback-mobile.jpg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .features__banner img{
+    background-image: url("../img/content-feedback-tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__banner img{
+    background-image: url("../img/content-feedback-desktop.jpg");
+  }
 }

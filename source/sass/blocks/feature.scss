@@ -1,0 +1,31 @@
+.feature__promo-city {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature__promo-bridge {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__promo-city {
+    background-image: url("../img/photo-city-tablet.jpg");
+  }
+
+  .feature__promo-bridge {
+    background-image: url("../img/photo-bridge-tablet.jpg");
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .feature__promo-city {
+    background-image: url("../img/photo-city-desktop.jpg");
+  }
+
+  .feature__promo-bridge {
+    background-image: url("../img/photo-bridge-desktop.jpg");
+    // object-fit: fill;
+  }
+}

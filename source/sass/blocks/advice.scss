@@ -17,14 +17,13 @@
 
 @media (min-width: $tablet-width) {
   .advice__list {
-    display: flex;
-    justify-content: center;
-    // gap: 71px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advice__list {
-    gap: 104px;
   }
 }

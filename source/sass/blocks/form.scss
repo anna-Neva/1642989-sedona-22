@@ -1,18 +1,7 @@
 .form {
   text-align: center;
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    // margin: auto;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form {
-    // margin: auto;
-    padding: 0 17px;
-  }
+  padding-top: 33px;
+  padding-bottom: 49px;
 }
 
 .form__title {
@@ -64,4 +53,16 @@
 
 .form__textarea {
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 58px auto 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 58px auto 66px;
+  }
 }

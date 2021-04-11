@@ -19,10 +19,9 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: grid;
-    grid-template-columns: (3, 1fr);
-    gap: 20px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .page-footer__hashtag {
