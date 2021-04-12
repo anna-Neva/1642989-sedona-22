@@ -1,12 +1,34 @@
+.page-footer {
+  padding-top: 29px;
+  padding-bottom: 23px;
+  text-align: center;
+}
+
 .page-footer__hashtag {
   margin: 0;
+  margin-bottom: 33px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.page-footer__copyright {
-  font-size: 14px;
-  line-height: 26px;
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
 }

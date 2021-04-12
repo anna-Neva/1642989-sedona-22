@@ -1,5 +1,4 @@
 .features__list {
-  margin-top: 27px;
   text-align: center;
 }
 
@@ -27,14 +26,64 @@
 .features__item {
   padding-top: 40px;
   background-color: $light-gray;
+  width: 100%;
 }
 
 .features__item--color {
   background-color: $blue;
   color: $white;
+  height: 100%;
+  padding: 39px 16px 35px;
 }
 
 .features__item--color .features__description,
 .features__item--color .features__intro {
   color: $white;
+}
+
+.features__first {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.features__second {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  display: grid;
+}
+
+.features__third {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__first {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .features__second {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .features__third {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .features__item--color {
+    padding-top: 40px 32px 44px;
+  }
+
+  .features__description--color {
+    padding: 18px auto 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--color {
+    padding-top: 49px;
+  }
 }

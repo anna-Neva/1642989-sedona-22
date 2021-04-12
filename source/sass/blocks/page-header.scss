@@ -1,0 +1,42 @@
+.page-header {
+  min-height: 56px;
+  position: relative;
+}
+
+.page-header__nave {
+  display: block;
+  background-color: $blue;
+  position: relative;
+}
+
+.page-header__logo {
+  height: 84px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 56px;
+  transform: translate(-50%, 100%);
+}
+
+.page-header__bar {
+  width: 100%;
+  height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__nave {
+    position: relative;
+    background-color: $white;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+
+  .page-header__bar {
+    // display: none;
+  }
+}

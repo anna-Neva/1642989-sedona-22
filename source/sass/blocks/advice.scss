@@ -1,3 +1,8 @@
+.advice__list {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
 .advice__title {
   margin: 0;
   font-size: 18px;
@@ -10,3 +15,15 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .advice__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advice__list {
+  }
+}

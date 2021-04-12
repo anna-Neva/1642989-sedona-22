@@ -1,6 +1,21 @@
-.map__iframe {
+.map {
   width: 320px;
   height: 350px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url("../img/map-tablet.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image: url("../img/map-desktop.jpg");
+  }
 }
