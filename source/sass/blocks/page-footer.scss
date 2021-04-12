@@ -32,3 +32,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: $white;
+  }
+}

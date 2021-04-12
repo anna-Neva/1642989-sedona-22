@@ -1,3 +1,7 @@
+.post {
+  // padding-bottom: 11px;
+}
+
 .post__title {
   margin: 0;
   font-size: 14px;
@@ -17,4 +21,44 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+}
+
+
+@media (min-width: $tablet-width) {
+  .post__first {
+    display: flex;
+    justify-content: center;
+  }
+
+  .post__title {
+    background-color: $gray;
+  }
+
+  .post__text {
+    background-color: $gray;
+  }
+
+  .post__likes {
+    background-color: $gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__title {
+    background-color: transparent;
+    background-image: url("../img/post-background.png");
+    color: $white;
+  }
+
+  .post__text {
+    background-color: transparent;
+    background-image: url("../img/post-background.png");
+    color: $white;
+  }
+
+  .post__likes {
+    background-color: transparent;
+    background-image: url("../img/post-background.png");
+    color: $white;
+  }
 }

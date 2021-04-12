@@ -1,0 +1,31 @@
+.posts__item {
+  padding: 22px 20px 15px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .posts {
+    padding: 0 60px;
+  }
+
+  .posts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 59px;
+  }
+
+  .posts__item {
+    padding: 0;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+//   .posts {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     padding-bottom: 63px;
+//   }
+
+//   .posts__item {
+//     // padding-bottom: 22px;
+//   }
+// }
