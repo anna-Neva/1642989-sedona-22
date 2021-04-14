@@ -19,7 +19,14 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 0 60px;
+  }
+
+  .video__screen {
+    margin-bottom: 40px;
+  }
+
+  .video__slogan {
+    font-size: 30px;
   }
 }

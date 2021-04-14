@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .social__link {
@@ -17,5 +16,12 @@
 .social__item {
   &:not(:last-child) {
     margin-right: 6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    padding-top: 36px;
+    // padding-bottom: 36px;
   }
 }
