@@ -2,40 +2,39 @@
   padding: 22px 20px 15px 20px;
 }
 
-.posts__large {
-  padding: 22px 20px 15px 20px;
-}
-
 @media (min-width: $tablet-width) {
   .posts {
     padding: 0 60px;
+    margin-bottom: 59px;
   }
 
   .posts__list {
-    padding-bottom: 59px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .posts__list .li:nth-child(2n) {
-    background-color: $light-gray-active;
-  }
-
   .posts__item {
     width: 50%;
-  }
+    padding: 0;
 
-  .posts__large {
-    width: 100%;
+    &:first-child {
+      width: 100%;
+    }
+
+    &:nth-child(odd):not(:first-child) {
+      background-color: $light-gray-active;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .posts {
     padding: 0;
+    margin-bottom: 63px;
   }
 
   .posts__item {
-    width: calc(100% / 3 * 1px);
+    width: 100% / 3 * 1;
+    background-color: $gray;
   }
 }

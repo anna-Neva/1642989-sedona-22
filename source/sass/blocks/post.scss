@@ -24,12 +24,21 @@
   .post {
     background-color: $gray;
   }
+
+  .post__desc {
+    padding: 22px 20px 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .post {
-    background-color: transparent;
-    background-image: url("../img/post-background.png");
+    background-color: $white;
+    // background-image: url("../img/post-background.png");
     color: $white;
+  }
+
+  .post__desc {
+    background-color: $black;
+    opacity: 0.3;
   }
 }
