@@ -4,6 +4,8 @@
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+  padding-bottom: 27px;
 }
 
 .video__intro {
@@ -11,4 +13,26 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 0 60px 40px;
+  }
+
+  .video__screen {
+    margin-bottom: 68px auto 76px;
+  }
+
+  .video__slogan {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__screen {
+    margin-bottom: 66px auto 121px;
+  }
 }

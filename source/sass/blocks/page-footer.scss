@@ -19,9 +19,13 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 39px;
+    padding-bottom: 28px;
   }
 
   .page-footer__hashtag {
@@ -30,5 +34,15 @@
 
   .page-footer__social {
     margin-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: $white;
   }
 }

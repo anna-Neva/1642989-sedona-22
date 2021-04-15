@@ -12,4 +12,16 @@
   font-style: normal;
   margin: 0;
   font-family: $default-font;
+  min-height: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    background-color: $very-light-gray;
+    padding: 0 40px;
+  }
+
+  .page-header__bar {
+    background-color: $white;
+  }
 }

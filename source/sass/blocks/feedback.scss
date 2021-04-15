@@ -4,6 +4,7 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 28px;
 }
 
 .feedback__description {
@@ -20,14 +21,29 @@
   background-repeat: no-repeat;
 }
 
+.feedback__specification {
+  margin: 0 auto;
+  text-align: center;
+  padding: 36px 0 37px;
+}
+
 @media (min-width: $tablet-width) {
   .features__banner img {
     background-image: url("../img/content-feedback-tablet.jpg");
+  }
+
+  .feedback__specification {
+    padding-top: 64px auto 61px;
+    max-width: 434px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .features__banner img {
     background-image: url("../img/content-feedback-desktop.jpg");
+  }
+
+  .feedback__specification {
+    padding-top: 114px auto 57px;
   }
 }

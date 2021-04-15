@@ -13,13 +13,9 @@
   justify-content: center;
 }
 
-.promo__description {
-  padding: 30px 0 48px;
-  text-align: center;
-}
-
 .promo__slogan {
   margin: 0;
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -35,11 +31,10 @@
   text-transform: uppercase;
 }
 
-.promo__intro--banner {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
+.promo__specification {
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 0 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,16 +44,38 @@
 
   .promo__banner {
     background-image: url("../img/promo-banner-tablet.jpg");
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
+  .promo__banner img {
+    width: 457px;
+    height: 78px;
+  }
+
+  .promo__specification {
+    padding-top: 65px auto 65px;
+    max-width: 458px;
+  }
+
+  .promo__slogan {
+    font-size: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .promo__description {
-    padding: 0 358px;
-  }
-
   .promo__banner {
     background-image: url("../img/promo-banner-desktop.jpg");
+    padding-top: 95px;
+    padding-bottom: 120px;
+  }
+
+  .promo__banner img {
+    width: 460px;
+    height: 80px;
+  }
+
+  .promo__specification {
+    padding-top: 102px auto 67px;
   }
 }
-
