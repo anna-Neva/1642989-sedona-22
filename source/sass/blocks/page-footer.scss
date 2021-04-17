@@ -17,6 +17,11 @@
   margin-bottom: 40px;
 }
 
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-bottom: 0;
@@ -34,10 +39,6 @@
 
   .page-footer__social {
     margin-bottom: 0;
-  }
-
-  .page-footer__copyright {
-    display: flex;
   }
 }
 

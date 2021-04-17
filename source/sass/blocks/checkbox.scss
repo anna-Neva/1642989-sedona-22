@@ -1,6 +1,50 @@
+.checkbox {
+  margin-bottom: 60px;
+}
+
 .checkbox__label {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+}
+
+// .checkbox__item checkbox__label {
+//   position: relative;
+//   display: block;
+//   cursor: pointer;
+//   user-select: none;
+// }
+
+// .checkbox__input + checkbox__label::before {
+//   content: "";
+//   position: absolute;
+//   left: -42px;
+//   top: 0;
+//   width: 46px;
+//   height: 46px;
+//   background-color: $gray;
+//   border: 5px solid $gray;
+//   border-radius: 5px;
+// }
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkbox__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox__place {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // width: 100%;
+  }
 }

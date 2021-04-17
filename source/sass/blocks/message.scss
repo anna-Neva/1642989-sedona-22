@@ -1,0 +1,10 @@
+.message {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .message {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}

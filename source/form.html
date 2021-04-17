@@ -12,7 +12,7 @@
       <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
         </span>
@@ -47,23 +47,23 @@
         </div>
     </header>
     <main class="page-main">
-      <section class="page-main__feedback feedback">
+      <section class="page-main__feedback feedback promo">
         <div class="promo__banner">
           <img src="img/banner-mobile-catalog.svg" width="229" height="39" alt="Sedona">
         </div>
         <section class="feedback__specification">
-        <h2 class="feedback__title">
-          Оставьте свой отзыв
-        </h2>
-        <div class="feedback__description">
-          Помогите нашим отелям стать лучше!
-          оставьте отзыв о них, а также о
-          посещенных вами достопримечательностях
-        </div>
+          <h2 class="feedback__title">
+            Оставьте свой отзыв
+          </h2>
+          <div class="feedback__description">
+            Помогите нашим отелям стать лучше!
+            оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
+          </div>
         </section>
       </section>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__item">
+      <form class="form form-item" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__item form__item--name">
           <legend class="form__name">
             Представьтесь
           </legend>
@@ -86,7 +86,7 @@
             <input class="form__input text-input text-input--icon" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </p>
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--contact">
           <legend class="form__name">
             Контактная информация
           </legend>
@@ -103,7 +103,7 @@
             <input class="form__input form__input--icon text-input" type="text" name="name" id="contact-email" placeholder="Введите e-mail">
           </p>
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--emotion">
           <legend class="form__name">
             Ваше общее впечатление
           </legend>
@@ -134,13 +134,13 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--place">
           <legend class="form__name">
             Посещенные достопримечательности:
           </legend>
-          <ul class="form__list checkbox reset-list">
+          <ul class="form__list form__list--place checkbox reset-list">
             <li class="checkbox__item">
-              <input class="checkbox__input" type="checkbox" name="checkbox-input" id="bridge" value="checkboxlist" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox-input" id="bridge" value="checkboxlist" checked>
               <label  class="checkbox__label" for="bridge">
                 <span>
                   Мост дьявола
@@ -148,7 +148,7 @@
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input" type="checkbox" name="negative" id="mountain" value="checkboxlist" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="negative" id="mountain" value="checkboxlist" checked>
               <label  class="checkbox__label" for="mountain">
                 <span>
                   Гора-колокол
@@ -156,7 +156,7 @@
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input" type="checkbox" name="dont-know" id="park" value="checkboxlist" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="dont-know" id="park" value="checkboxlist" checked>
               <label  class="checkbox__label" for="park">
                 <span>
                   Слайд-парк
@@ -164,7 +164,7 @@
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input" type="checkbox" name="dont-know" id="rocks" value="checkboxlist">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="dont-know" id="rocks" value="checkboxlist">
               <label  class="checkbox__label" for="rocks">
                 <span>
                   Красные скалы
@@ -173,7 +173,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--feedback">
           <legend class="form__name">
             Опишите свои эмоции:
           </legend>
@@ -183,14 +183,21 @@
           <textarea class="form__textarea" name="text" id="comment" placeholder="Опишите подробно все свои восторги">
           </textarea>
         </fieldset>
-          <button class="button button-send" type="submit">Отправить отзыв</button>
       </form>
+      <div class="send-message">
+        <button class="button button-send" type="submit">
+          Отправить отзыв
+        </button>
+        <span class="message">
+          *-Обязательные поля
+        </span>
+      </div>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">
         #visitSEDONA
       </p>
-      <ul class="social reset-list">
+      <ul class="page-footer__social social reset-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">
@@ -213,7 +220,7 @@
           </a>
         </li>
       </ul>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <span class="copyright__text">
             Разработано
           </span>
