@@ -109,24 +109,30 @@
           </legend>
           <ul class="form__list radio-button reset-list">
             <li class="radio-button__item">
-              <input class="radio-button__input" type="radio" name="positive" id="positive" value="positive" checked>
               <label  class="radio-button__label" for="positive">
+                <input class="radio-button__input visually-hidden" type="radio" name="positive" id="positive" value="positive" checked>
+                <span class="radio-button__name">
+                </span>
                 <span>
                   Скорее положительное
                 </span>
               </label>
             </li>
             <li class="radio-button__item">
-              <input class="radio-button__input" type="radio" name="negative" id="negative" value="negative">
               <label  class="radio-button__label" for="negative">
+                <input class="radio-button__input visually-hidden" type="radio" name="negative" id="negative" value="negative">
+                <span class="radio-button__name">
+                </span>
                 <span>
                   Скорее отрицательное
                 </span>
               </label>
             </li>
             <li class="radio-button__item">
-              <input class="radio-button__input" type="radio" name="dont-know" id="dont-know" value="dont-know">
               <label  class="radio-button__label" for="dont-know">
+                <input class="radio-button__input visually-hidden" type="radio" name="dont-know" id="dont-know" value="dont-know">
+                <span class="radio-button__name">
+                </span>
                 <span>
                   Затрудняюсь ответить
                 </span>
@@ -140,32 +146,40 @@
           </legend>
           <ul class="form__list form__list--place checkbox reset-list">
             <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox-input" id="bridge" value="checkboxlist" checked>
               <label  class="checkbox__label" for="bridge">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" id="bridge" value="checkboxlist" checked>
+                <span class="checkbox__box">
+                </span>
                 <span>
                   Мост дьявола
                 </span>
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="negative" id="mountain" value="checkboxlist" checked>
               <label  class="checkbox__label" for="mountain">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="mountain" id="mountain" value="checkboxlist" checked>
+                <span class="checkbox__box">
+                </span>
                 <span>
                   Гора-колокол
                 </span>
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="dont-know" id="park" value="checkboxlist" checked>
               <label  class="checkbox__label" for="park">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="park" id="park" value="checkboxlist" checked>
+                <span class="checkbox__box">
+                </span>
                 <span>
                   Слайд-парк
                 </span>
               </label>
             </li>
             <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="dont-know" id="rocks" value="checkboxlist">
               <label  class="checkbox__label" for="rocks">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="rocks" id="rocks" value="checkboxlist">
+                <span class="checkbox__box">
+                </span>
                 <span>
                   Красные скалы
                 </span>
@@ -180,18 +194,22 @@
           <label class="visually-hidden" for="comment">
             Оставьте обратную связь
           </label>
-          <textarea class="form__textarea" name="text" id="comment" placeholder="Опишите подробно все свои восторги">
-          </textarea>
+          <textarea
+          class="form__textarea text-input text-input--textarea"
+          name="text"
+          id="comment"
+          placeholder="Опишите подробно все свои восторги"
+          ></textarea>
         </fieldset>
+        <div class="form__message">
+          <button class="form__submit button-primary" type="submit">
+            Отправить отзыв
+          </button>
+          <span class="form__note">
+            *-Обязательные поля
+          </span>
+        </div>
       </form>
-      <div class="send-message">
-        <button class="button button-send" type="submit">
-          Отправить отзыв
-        </button>
-        <span class="message">
-          *-Обязательные поля
-        </span>
-      </div>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">
