@@ -25,24 +25,21 @@
   margin: 0 auto;
   text-align: center;
   padding: 36px 0 37px;
+  width: 306px;
 }
 
 @media (min-width: $tablet-width) {
-  .features__banner img {
-    background-image: url("../img/content-feedback-tablet.jpg");
-  }
-
   .feedback__specification {
     padding-top: 64px auto 61px;
-    max-width: 434px;
+    width: 434px;
+  }
+
+  .feedback__title {
+    font-size: 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .features__banner img {
-    background-image: url("../img/content-feedback-desktop.jpg");
-  }
-
   .feedback__specification {
     padding-top: 114px auto 57px;
   }

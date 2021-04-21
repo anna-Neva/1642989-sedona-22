@@ -15,15 +15,26 @@
   margin: 0;
 }
 
+.advice__item {
+  position: relative;
+  text-align: left;
+}
+
+.advice__item--lodging::before {
+  position: absolute;
+  top: 10px;
+  left: 49px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+}
+
+
 @media (min-width: $tablet-width) {
   .advice__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advice__list {
   }
 }

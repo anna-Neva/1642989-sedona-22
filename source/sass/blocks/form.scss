@@ -27,6 +27,7 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 36px;
 }
 
 .form__label {
@@ -37,32 +38,127 @@
   text-transform: uppercase;
 }
 
-.form__input {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-  border: none;
-}
-
 .form__item {
   margin: 0;
   padding: 0;
   border: none;
 }
 
+.form__item--feedback {
+  margin: 15px 22px 51px 19px;
+}
+
+.form__item--contact {
+  margin-bottom: 49px;
+}
+
+.form__item--name {
+  margin-bottom: 46px;
+}
+
 .form__textarea {
   resize: none;
+  padding: 13px 23px 29px 21px;
+  border: border-box;
+  background-color: $gray;
+  border-radius: 3px;
+  height: 160px;
+  width: 100%;
+}
+
+.form__submit {
+  padding: 18px 33px 14px;
+}
+
+.form__note {
+  display: none;
+}
+
+.form__list {
+  display: block;
+}
+
+.form__input::placeholder {
+  height: 58px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: $gray;
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 58px auto 58px;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+    padding: 58px 0 58px;
+  }
+
+  .form__item {
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+  }
+
+  .form__note {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .form__submit {
+    width: 324px;
+  }
+
+  .form__name {
+    font-size: 21px;
+    padding-bottom: 48px;
+  }
+
+  .form__item--emotion {
+    order: 1;
+    width: 50%;
+  }
+
+  .form__item--name {
+    order: 2;
+    width: 50%;
+  }
+
+  .form__item--contact {
+    order: 3;
+    width: 100%;
+  }
+
+  .form__item--place {
+    order: 4;
+    width: 100%;
+  }
+
+  .form__item--feedback {
+    order: 5;
+    height: 160px;
+    width: 100%;
+  }
+
+  .form__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 58px auto 66px;
+    padding: 58px 0 66px;
+  }
+
+  .form__item--contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form__submit {
+    width: 480px;
   }
 }
+

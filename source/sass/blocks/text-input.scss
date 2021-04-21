@@ -4,11 +4,17 @@
   font-weight: bold;
   color: $black;
   border: none;
+  height: 58px;
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
     color: $black;
+    padding: 13px 23px 29px 21px;
+  }
+
+  &--textarea {
+    resize: none;
   }
 }

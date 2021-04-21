@@ -80,10 +80,18 @@
   .features__description--color {
     padding: 18px auto 20px;
   }
+
+  .features__banner img {
+    background-image: url("../img/content-feedback-tablet.jpg");
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features__item--color {
     padding-top: 49px;
+  }
+
+  .features__banner img {
+    background-image: url("../img/content-feedback-desktop.jpg");
   }
 }

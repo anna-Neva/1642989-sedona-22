@@ -1,7 +1,25 @@
 .main-nav {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
+
+
+// .main-nav__toggle {
+//   position: absolute;
+//   top: 17;
+//   right: 20;
+//   // z-index: 2;
+//   // display: block;
+//   background-image: url(../img/mobile-menu-close.svg);
+//   // cursor: pointer;
+//   // border: none;
+
+//   &:hover {
+//     background-image: url(../img/mobile-menu-hover.svg);
+//   }
+
+//   &:active {
+//     background-image: url(../img/mobile-menu-down.svg);
+//   }
+// }
 
 .main-nav__list {
   margin: 0;
@@ -14,11 +32,6 @@
 @media (min-width: $tablet-width) {
   .main-nav__list a {
     padding-top: 16px;
-    width: 100%;
+    overflow: hidden;
   }
 }
-
-
-// .maine-nav__list :first-child {
-//   margin-right: 47px;
-//   }

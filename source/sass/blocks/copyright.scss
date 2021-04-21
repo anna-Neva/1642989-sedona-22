@@ -7,10 +7,5 @@
 
 .copyright__text {
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .copyright__text {
-    width: 121px;
-  }
+  width: 121px;
 }

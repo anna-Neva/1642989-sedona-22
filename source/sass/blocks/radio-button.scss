@@ -3,4 +3,39 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  padding-bottom: 57px;
+  position: relative;
+  padding-left: 21px;
+}
+
+.radio-button__name {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin-top: -5px;
+  margin-left: 24px;
+  border-radius: 50%;
+  background-color: $gray;
+  display: block;
+}
+
+.radio-button__item {
+  padding-bottom: 43px;
+}
+
+.radio-button__input {
+  position: absolute;
+  display: block;
+  margin-bottom: -21px;
+}
+
+.radio-button__input:focus + .radio-button__name {
+  background-color: $gray-hover;
+}
+
+.radio-button__input:checked + .radio-button__name {
+  background-color: $gray-checked;
+  background-image: url("../img/radio-input-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
