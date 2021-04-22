@@ -1,0 +1,31 @@
+.form-search {
+  text-align: center;
+  padding-top: 33px;
+  padding-bottom: 49px;
+}
+
+.form-search__title {
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-search__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: $light-black;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-search {
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+    padding: 58px 0 58px;
+  }
+}
