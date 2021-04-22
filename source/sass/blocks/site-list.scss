@@ -10,6 +10,15 @@
   justify-content: center;
 }
 
+.site-list__link:hover {
+  color: $blue;
+
+  &:active {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -28,7 +37,7 @@
     padding-left: 34px;
   }
 
-  .site-list__link--second{
+  .site-list__link--second {
     width: 20%;
   }
 
@@ -42,7 +51,4 @@
     width: 20%;
     padding-right: 11px;
   }
-}
-
-@media (min-width: $desktop-width) {
 }

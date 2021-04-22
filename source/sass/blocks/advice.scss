@@ -69,6 +69,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advice {
+    order: 2;
+  }
+
   .advice__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,10 +105,6 @@
     width: 76px;
     height: 68px;
     background-image: url("../img/icon-burger-tablet.svg");
-  }
-
-  .advice__list {
-
   }
 
   .advice__item--lodging {

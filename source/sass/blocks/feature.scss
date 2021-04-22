@@ -11,6 +11,11 @@
 @media (min-width: $tablet-width) {
   .feature__promo--city {
     background-size: cover;
+    order: 2;
+  }
+
+  .feature__promo--bridge {
+    order: 1;
   }
 }
 

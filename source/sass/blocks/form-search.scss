@@ -10,6 +10,7 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 10px 0 20px;
 }
 
 .form-search__text {
@@ -21,11 +22,20 @@
   text-transform: uppercase;
 }
 
-
 @media (min-width: $tablet-width) {
   .form-search {
     outline: 5px solid rgba(0, 255, 0, 0.8);
     outline-offset: -5px;
     padding: 58px 0 58px;
+  }
+
+  .form-search__text {
+    width: 435px;
+    text-align: center;
+    display: block;
+  }
+
+  .form-search__title {
+    padding: 10px 0 20px;
   }
 }
