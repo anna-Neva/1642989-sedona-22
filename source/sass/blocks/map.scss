@@ -1,5 +1,6 @@
 .map {
-  width: 320px;
+  width: 100%;
+  // width: 320px;
   height: 350px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
@@ -11,11 +12,13 @@
 @media (min-width: $tablet-width) {
   .map {
     background-image: url("../img/map-tablet.jpg");
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     background-image: url("../img/map-desktop.jpg");
+    width: 100%;
   }
 }

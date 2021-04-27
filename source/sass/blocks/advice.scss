@@ -1,12 +1,10 @@
-.advice__list {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-  padding: 35px 0 11px 69px;
+.advice {
+  padding: 35px 60px 35px 70px;
 }
 
 .advice__title {
   margin: 0 0 15px;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -21,68 +19,92 @@
 }
 
 .advice__item {
-  // position: relative;
+  position: relative;
+  padding-bottom: 27px;
   text-align: left;
-  padding: 0 0 27px;
-}
 
-.advice__house {
-  position: absolute;
-  left: 25px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
-}
+  &:last-child {
+    padding-bottom: 0;
+  }
 
-.advice__souvenirs {
-  position: absolute;
-  left: 25px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-}
+  &::before {
+    position: absolute;
+    top: -10px;
+    // left: 50%;
+    left: -50px;
+    width: 40px;
+    height: 38px;
+    content: "";
+    // transform: translateX(-50%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
 
-.advice__food {
-  position: absolute;
-  left: 25px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-burger.svg");
-  background-repeat: no-repeat;
-}
+  &--lodging::before {
+    background-image: url("../img/icon-house.svg");
+    background-size: 40px 37px;
+  }
 
-.advice__item--lodging {
-  position: relative;
-  width: 240px;
-}
+  &--souvenirs::before {
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px 38px;
+  }
 
-.advice__item--souvenirs {
-  position: relative;
-  width: 229px;
-}
-
-.advice__item--food {
-  position: relative;
-  width: 210px;
+  &--food::before {
+    background-image: url("../img/icon-burger.svg");
+    background-size: 40px 35px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  // .advice__list {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   gap: 20px;
+  // }
+
   .advice {
-    order: 2;
+    padding: 60px 31px 60px 36px;
   }
 
-  .advice__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  .advice__item {
+    position: relative;
+    padding: 0 0 27px;
+    text-align: left;
+    padding-top: 90px;
+    justify-self: center;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 76px;
+      height: 75px;
+      content: "";
+      transform: translateX(-50%);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+
+    &--lodging::before {
+      background-image: url("../img/icon-house.svg");
+      background-size: 75px 72px;
+    }
+
+    &--souvenirs::before {
+      background-image: url("../img/icon-gift.svg");
+      background-size: 76px 68px;
+    }
+
+    &--food::before {
+      background-image: url("../img/icon-burger.svg");
+      background-size: 64px 75px;
+    }
   }
 
   .advice__house {
     left: 50%;
     margin-left: -38px;
-    // left: 120px;
     width: 75px;
     height: 72px;
     background-image: url("../img/icon-house-tablet.svg");
@@ -91,7 +113,6 @@
   .advice__souvenirs {
     left: 50%;
     margin-left: -32px;
-    // left: 650px;
     width: 64px;
     height: 75px;
     background-image: url("../img/icon-gift-tablet.svg");
@@ -100,31 +121,37 @@
   .advice__food {
     left: 50%;
     margin-left: -38px;
-    // top: 25px;
-    // left: 395px;
     width: 76px;
     height: 68px;
     background-image: url("../img/icon-burger-tablet.svg");
   }
 
   .advice__item--lodging {
-    padding-top: 90px;
-    order: 1;
     width: 185px;
-    text-align: center;
+    order: 1;
   }
 
   .advice__item--souvenirs {
-    padding-top: 90px;
+    width: 193px;
     order: 3;
-    width: 180px;
-    text-align: center;
   }
 
   .advice__item--food {
-    padding-top: 90px;
+    width: 180px;
     order: 2;
-    width: 193px;
-    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advice__item--lodging {
+    width: 282px;
+  }
+
+  .advice__item--souvenirs {
+    width: 313px;
+  }
+
+  .advice__item--food {
+    width: 244px;
   }
 }

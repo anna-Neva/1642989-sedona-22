@@ -1,7 +1,10 @@
 .promo {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   background-color: $white;
+}
+
+.promo__description {
+  margin: 0 auto;
+  width: 285px;
 }
 
 .promo__banner {
@@ -35,12 +38,14 @@
 .promo__specification {
   margin: 0 auto;
   text-align: center;
-  padding: 32px 0 40px;
+  padding: 32px 0 20px;
+  border-bottom: 1px solid $gray-hover;
 }
 
 @media (min-width: $tablet-width) {
   .promo__description {
-    padding: 44px 124px 53px;
+    margin: 44px auto 53px;
+    width: 520px;
   }
 
   .promo__banner {
@@ -50,17 +55,16 @@
   }
 
   .promo__banner img {
-    width: 457px;
-    height: 78px;
+    width: 460px;
+    height: 350px;
   }
 
   .promo__specification {
-    padding-top: 65px auto 65px;
-    max-width: 458px;
+    padding: 65px 0 65px;
   }
 
   .promo__slogan {
-    font-size: 26px;
+    font-size: 21px;
   }
 }
 
@@ -71,12 +75,11 @@
     padding-bottom: 120px;
   }
 
-  .promo__banner img {
-    width: 460px;
-    height: 80px;
+  .promo__specification {
+    padding: 102px 0 67px;
   }
 
-  .promo__specification {
-    padding-top: 102px auto 67px;
+  .promo__description {
+    width: 493px;
   }
 }
