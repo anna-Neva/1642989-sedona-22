@@ -12,4 +12,21 @@
   background-color: $blue;
   border-radius: 0;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $dark-dark-blue;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: $gray-hover;
+  }
 }

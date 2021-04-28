@@ -11,6 +11,15 @@
   box-sizing: border-box;
   display: block;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+  }
+
+  &:active img {
+    background-color: $dark-dark-blue;
+  }
 }
 
 .social__item {

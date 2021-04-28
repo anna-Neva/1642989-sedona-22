@@ -1,6 +1,8 @@
 .posts__item {
   padding: 22px 20px 15px 20px;
+  border-bottom: 1px solid $gray-hover;
 }
+
 
 @media (min-width: $tablet-width) {
   .posts {
@@ -16,6 +18,7 @@
   .posts__item {
     width: 50%;
     padding: 0;
+    border-bottom: none;
 
     &:first-child {
       width: 100%;
@@ -34,6 +37,7 @@
   }
 
   .posts__item {
+    position: relative;
     width: 100% / 3 * 1;
     background-color: $gray;
   }

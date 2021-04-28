@@ -1,37 +1,24 @@
 .main-nav {
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }
-
-
-// .main-nav__toggle {
-//   position: absolute;
-//   top: 17;
-//   right: 20;
-//   // z-index: 2;
-//   // display: block;
-//   background-image: url(../img/mobile-menu-close.svg);
-//   // cursor: pointer;
-//   // border: none;
-
-//   &:hover {
-//     background-image: url(../img/mobile-menu-hover.svg);
-//   }
-
-//   &:active {
-//     background-image: url(../img/mobile-menu-down.svg);
-//   }
-// }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
-  list-style: none;
   align-items: center;
 }
 
-
 @media (min-width: $tablet-width) {
-  .main-nav__list a {
-    padding-top: 16px;
-    overflow: hidden;
+  .main-nav {
+    background-color: $white;
   }
 }

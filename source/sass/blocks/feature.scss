@@ -1,9 +1,16 @@
-.feature__promo--city {
-  background-repeat: no-repeat;
-  background-size: cover;
+// .feature__promo--bridge {
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   order: 2;
+// }
+
+@media (min-width: $tablet-width) {
+  .feature__promo--city {
+    order: 2;
+  }
+
+  .feature__promo--bridge {
+    order: 1;
+  }
 }
 
-.feature__promo--bridge {
-  background-repeat: no-repeat;
-  background-size: cover;
-}

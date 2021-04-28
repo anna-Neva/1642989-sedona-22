@@ -9,3 +9,12 @@
   text-transform: uppercase;
   width: 121px;
 }
+
+.copyright__link-icon:hover,
+.copyright__link-icon:focus {
+  background-image: url("../img/logo-htmlacademy-hover.svg");
+}
+
+.copyright__link-icon:active {
+  background-image: url("../img/logo-htmlacademy-active.svg");
+}
