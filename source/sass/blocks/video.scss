@@ -5,22 +5,100 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 27px;
+  padding: 32px 27px 33px;
 }
 
 .video__intro {
-  margin: 0;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 27px;
+  max-width: 266px;
 }
 
-.video__screen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.video__control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: -5px;
+  min-height: 45px;
+  margin: 0 20px;
+  background-color: $gray;
+}
+
+.video__button--replay {
+  background-image: url("../img/replay-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.video__button--subtitle {
+  background-image: url("../img/subtitles-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.video__button--fullscreen {
+  background-image: url("../img/fullscreen.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.video__progress {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  top: -5px;
+  min-height: 45px;
+  margin: 0 20px;
+  background-color: $black;
+  opacity: 0.6;
+}
+
+.video__screen {
+  position: relative;
+
+  &::after {
+    border: none;
+    position: absolute;
+    content: "";
+    top: 70%;
+    left: 50%;
+    height: 45px;
+    width: 280px;
+    transform: translate(-50%, -50%);
+    background-color: $black;
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+  }
+
+  &::before {
+    border: none;
+    position: absolute;
+    content: "";
+    top: 70%;
+    left: 50%;
+    height: 3px;
+    width: 235px;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    opacity: 0.2;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+  .video__screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,10 +113,13 @@
   .video__slogan {
     font-size: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .video__screen {
-    // margin: 66px 140px 44px;
+  .video__control li {
+    display: block;
+  }
+
+  .video__intro {
+    max-width: 445px;
+    margin: 0 auto;
   }
 }

@@ -30,3 +30,9 @@
     background-color: $gray-hover;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button-primary {
+    padding: 14px 121px;
+  }
+}

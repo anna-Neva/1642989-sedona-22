@@ -21,6 +21,38 @@
   }
 }
 
+.page-header--opened .page-header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: auto;
+    right: 16px;
+    width: 23px;
+    height: 3px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($black, 30%);
+  }
+}
+
 .page-header__nav {
   display: block;
   background-color: $blue;

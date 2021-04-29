@@ -3,8 +3,17 @@
 }
 
 .promo__description {
+  position: relative;
   margin: 0 auto;
   width: 285px;
+  padding: 32px 0 11px;
+}
+
+.promo__triangle {
+  top: 332px;
+  background-image: url("../img/white-banner-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .promo__banner {
@@ -40,6 +49,7 @@
   text-align: center;
   padding: 32px 0 20px;
   border-bottom: 1px solid $gray-hover;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,10 +67,24 @@
   .promo__banner img {
     width: 460px;
     height: 350px;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .promo__triangle {
+    position: absolute;
+    background-image: url("../img/white-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 150px;
+    left: 50%;
   }
 
   .promo__specification {
     padding: 65px 0 65px;
+    border: none;
+    max-width: 458px;
+    margin: 0 auto;
   }
 
   .promo__slogan {
