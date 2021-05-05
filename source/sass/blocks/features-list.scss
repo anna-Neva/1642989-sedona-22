@@ -5,12 +5,15 @@
 }
 
 .features-list__item {
+
+  border-bottom: 1px solid $gray-hover;
+
   br {
     display: none;
   }
 
-  &:not(:last-child) {
-    border-bottom: 1px solid $gray-hover;
+  &:last-child {
+    border-bottom: none;
   }
 }
 
@@ -30,7 +33,7 @@
 
 .features-list__intro {
   margin: 0 auto;
-  max-width: 320px;
+  // max-width: 320px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -44,22 +47,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 42px 0 41px;
-
-    // &:nth-child(1) {
-    //   max-width: 189px;
-    // }
-
-    // &:nth-child(2) {
-    //   min-width: 162px;
-    // }
-
-    // &:nth-child(3) {
-    //   min-width: 175px;
-    // }
   }
 
   .features-list__item {
     border: none;
+    padding: 0 20px;
 
     br {
       display: block;

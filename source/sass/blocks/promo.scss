@@ -1,11 +1,25 @@
 .promo {
   background-color: $white;
+  // position: relative;
+
+  // &:after {
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: -37px;
+  //   width: 100%;
+  //   height: 37px;
+  //   content: "";
+  //   background-image: url("../img/triangle-mobile-2.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: 100% 37px;
+  // }
 }
 
 .promo__description {
   position: relative;
   margin: 0 auto;
-  width: 285px;
+  max-width: 285px;
   padding: 32px 0 11px;
 }
 
@@ -18,11 +32,25 @@
 
 .promo__banner {
   padding: 90px 0 85px;
-  background-image: url("../img/promo-banner-mobile.jpg");
+  background-image: url("../img/promo-banner-mobile-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    content: "";
+    background-image: url("../img/triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 57px;
+  }
 }
 
 .promo__slogan {
@@ -38,7 +66,7 @@
 .promo__intro {
   margin: 0;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   color: $light-black;
   text-align: center;
   text-transform: uppercase;
@@ -47,28 +75,47 @@
 .promo__specification {
   margin: 0 auto;
   text-align: center;
-  padding: 32px 0 20px;
+  padding: 32px 9px 20px 12px;
   border-bottom: 1px solid $gray-hover;
   max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .promo__description {
-    margin: 44px auto 53px;
-    width: 520px;
+    margin-top: 44px;
+    margin-bottom: 53px;
+    max-width: 520px;
   }
 
   .promo__banner {
-    background-image: url("../img/promo-banner-tablet.jpg");
-    padding-top: 95px;
-    padding-bottom: 117px;
+    background-image: url("../img/promo-banner-tablet-catalog.jpg");
+
+    .promo__banner {
+      position: relative;
+      padding-top: 86px;
+      padding-bottom: 117px;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 57px;
+        content: "";
+        background-image: url("../img/triangle-tablet.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 56px;
+      }
+    }
   }
 
   .promo__banner img {
     width: 460px;
     height: 350px;
-    padding-bottom: 0;
     position: relative;
+    padding-top: 95px;
+    padding-bottom: 117px;
   }
 
   .promo__triangle {
@@ -88,7 +135,7 @@
   }
 
   .promo__slogan {
-    font-size: 21px;
+    font-size: 30px;
   }
 }
 
@@ -104,6 +151,6 @@
   }
 
   .promo__description {
-    width: 493px;
+    max-width: 493px;
   }
 }

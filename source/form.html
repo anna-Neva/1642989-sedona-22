@@ -89,18 +89,20 @@
           <legend class="form__name">
             Контактная информация
           </legend>
-          <p class="form__field">
-            <label  class="form__label" for="contact-phone">
-              Контактный телефон*:
-            </label>
-            <input class="form__input form__input--icon text-input" type="text" name="name" id="contact-phone" placeholder="Введите телефон">
-          </p>
-          <p class="form__field">
-            <label class="form__label" for="contact-email">
-              Электронная почта*:
-            </label>
-            <input class="form__input form__input--icon text-input" type="text" name="name" id="contact-email" placeholder="Введите e-mail">
-          </p>
+          <div class="form__group">
+            <p class="form__field form__field--contact">
+              <label  class="form__label" for="contact-phone">
+                Контактный телефон*:
+              </label>
+              <input class="form__input form__input--phone text-input" type="text" name="phone" id="contact-phone" placeholder="Введите телефон">
+            </p>
+            <p class="form__field form__field--contact">
+              <label class="form__label" for="contact-email">
+                Электронная почта*:
+              </label>
+              <input class="form__input form__input--mail text-input" type="text" name="mail" id="contact-email" placeholder="Введите e-mail">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="form__item form__item--emotion">
           <legend class="form__name">
@@ -194,10 +196,10 @@
             Оставьте обратную связь
           </label>
           <textarea
-          class="form__textarea text-input text-input--textarea"
-          name="text"
-          id="comment"
-          placeholder="Опишите подробно все свои восторги"
+            class="form__textarea text-input text-input--textarea"
+            name="text"
+            id="comment"
+            placeholder="Опишите подробно все свои восторги"
           ></textarea>
         </fieldset>
         <div class="form__message">

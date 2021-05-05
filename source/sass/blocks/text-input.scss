@@ -7,15 +7,22 @@
   height: 58px;
   padding: 0;
 
-  &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    color: $black;
-    padding: 13px 23px 29px 21px;
-  }
-
   &--textarea {
     resize: none;
+    height: 160px;
+  }
+}
+
+.text-input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  padding: 13px 23px 29px 21px;
+}
+
+@media (min-width: $desktop-width) {
+  .text-input {
+    margin-left: 16px;
   }
 }

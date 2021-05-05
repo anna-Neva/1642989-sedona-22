@@ -4,7 +4,7 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  padding-left: 21px;
+  padding-left: 60px;
 }
 
 .checkbox__input {
@@ -31,14 +31,17 @@
   width: 46px;
   height: 46px;
   margin-top: -5px;
-  margin-left: 24px;
   border-radius: 7px;
   background-color: $gray;
   display: block;
 }
 
 .checkbox__item {
-  padding-bottom: 54px;
+  margin-bottom: 54px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,11 +52,13 @@
 
   .checkbox__item {
     width: 50%;
+    margin-bottom: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox__item {
     width: 25%;
+    margin-bottom: 73px;
   }
 }
