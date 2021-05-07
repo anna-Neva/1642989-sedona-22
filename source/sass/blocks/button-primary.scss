@@ -1,5 +1,4 @@
 .button-primary {
-  // display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -27,7 +26,7 @@
   }
 
   &:disabled {
-    background-color: $gray-hover;
+    background-color: $grey-hover;
   }
 }
 
@@ -36,4 +35,3 @@
     padding: 14px 121px 18px;
   }
 }
-

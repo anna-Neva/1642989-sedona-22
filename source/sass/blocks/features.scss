@@ -82,9 +82,7 @@
   .features__advice {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // width: 100%;
     grid-column: 1 / - 1;
-    // background-color: $very-light-gray;
   }
 }
 

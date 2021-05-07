@@ -1,14 +1,15 @@
-.video {
-  margin-bottom: 77px;
+.video__link {
+  display: block;
+  height: 201px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-.video__screen img {
-  display: block;
-  width: 100%;
-  // height: 100%;
-  height: 201px;
-  object-fit: cover;
-}
 
 .video__slogan {
   margin: 0;
@@ -26,24 +27,19 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 27px;
+  padding-bottom: 27px;
   max-width: 266px;
 }
 
 .video__controls {
   display: flex;
   flex-wrap: wrap;
-  // background-color: $gray;
   padding-bottom: 20px;
-  // padding: 0 20px;
   position: absolute;
   left: 20px;
   right: 20px;
   bottom: -47px;
-  // background-color: $gray;
   height: 93px;
-  // flex-wrap: wrap;
-  // width: 100%;
   z-index: 1;
 }
 
@@ -53,11 +49,10 @@
   display: block;
   height: 66px;
   width: 100%;
-  background-color: $gray;
+  background-color: $grey;
   top: 45px;
   z-index: -1;
 }
-
 
 .video__button {
   background-repeat: no-repeat;
@@ -66,17 +61,18 @@
   background-color: transparent;
   width: 20px;
   height: 20px;
-  margin: 0;
+  padding: 0;
+  cursor: pointer;
 
   &--replay {
-    background-image: url("../img/replay-mobile.svg");
+    background-image: url("../img/replay.svg");
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   &--subtitle {
-    background-image: url("../img/subtitles-mobile.svg");
+    background-image: url("../img/subtitles.svg");
     margin-left: auto;
     margin-right: 31px;
     margin-top: 20px;
@@ -88,6 +84,17 @@
     margin-left: 20px;
     margin-top: 20px;
   }
+
+  &--thumb {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    background-color: $white;
+    border-radius: 50%;
+    top: 17px;
+    left: 20%;
+  }
 }
 
 .video__scale {
@@ -95,34 +102,16 @@
   min-height: 45px;
   background-color: rgba($black, 0.5);
   width: 100%;
-  // padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .video__bar {
   position: absolute;
   height: 3px;
-  width: 90%;
-  background-color: $white;
-  opacity: 0.2;
-  // padding-left: 22px;
-  // padding-right: 22px;
+  width: calc(100% - 44px);
+  background-color: rgba($white, 0.2);
   top: 50%;
-  left: 5%;
-}
-
-.video__button--thumb {
-  position: absolute;
-  // background-image: url("../img/video-batton-thumb.svg");
-  width: 13px;
-  height: 13px;
-  padding: 0;
-  border: 13px solid var(--basic-white);
-  background-color: $white;
-  border-radius: 50%;
-  top: 18px;
-  left: 20%;
-  cursor: pointer;
+  transform: translateY(-50%);
+  left: 22px;
 }
 
 .video__screen {
@@ -131,30 +120,43 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding: 0 60px 40px;
+    padding: 0 60px 76px;
+  }
+
+  .video__scale {
+    width: auto;
+    flex-grow: 1;
+    min-height: auto;
+    background-color: transparent;
   }
 
   .video__bar {
-    width: 60%;
+    width: 100%;
+    left: 0;
   }
 
   .video__screen {
     position: relative;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  .video__screen img {
+  .video__link {
     height: 500px;
   }
 
   .video__controls {
-    display: flex;
-    flex-wrap: nowrap;
     position: absolute;
     left: 0;
     bottom: 0;
-    // background-color: rgba($black, 0.5);
+    display: flex;
+    align-items: center;
     height: 93px;
     width: 100%;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-right: 41px;
+    background-color: rgba($black, 0.6);
   }
 
   .video__controls::before {
@@ -173,31 +175,24 @@
       margin-left: 42px;
       margin-right: 31px;
     }
-  }
 
-  .video__button--thumb {
-    top: 41%;
-  }
-
-  .video__scale {
-    max-width: 100%;
-    // background-color: transparent;
-    // margin: 0 auto;
-    height: 93px;
-    top: 0;
-    z-index: 2;
+    &--thumb {
+      top: -3px;
+    }
   }
 
   .video__slogan {
     font-size: 30px;
   }
 
-  .video__controls li {
-    display: block;
-  }
-
   .video__intro {
     max-width: 445px;
-    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding-bottom: 85px;
   }
 }

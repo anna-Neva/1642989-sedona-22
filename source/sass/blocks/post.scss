@@ -37,21 +37,28 @@
 
 .post__link {
   display: block;
+  height: 280px;
 }
 
 .post__link img {
+  display: block;
   width: 100%;
-  // height: 100%;
-  height: 280px;
+  height: 100%;
   object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
   .post {
-    background-color: $gray;
+    background-color: $grey;
   }
 
-  .post__link img {
+  .post--promo {
+    .post__link {
+      height: 400px;
+    }
+  }
+
+  .post__link {
     height: 267px;
   }
 

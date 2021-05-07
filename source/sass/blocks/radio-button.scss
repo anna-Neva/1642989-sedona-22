@@ -14,7 +14,7 @@
   height: 48px;
   margin-top: -10px;
   border-radius: 50%;
-  background-color: $gray;
+  background-color: $grey;
   display: block;
 }
 
@@ -29,11 +29,11 @@
 }
 
 .radio-button__input:focus + .radio-button__name {
-  background-color: $gray-hover;
+  background-color: $grey-hover;
 }
 
 .radio-button__input:checked + .radio-button__name {
-  background-color: $gray-checked;
+  background-color: $grey-checked;
   background-image: url("../img/radio-input-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -41,6 +41,12 @@
 
 @media (min-width: $tablet-width) {
   .radio-button__label {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-button__item {
     padding-bottom: 52px;
   }
 }

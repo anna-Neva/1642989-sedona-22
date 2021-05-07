@@ -1,12 +1,12 @@
 .features-list {
-  background-color: $light-gray;
+  background-color: $light-grey;
   text-align: center;
   padding: 0 26px;
 }
 
 .features-list__item {
 
-  border-bottom: 1px solid $gray-hover;
+  border-bottom: 1px solid $grey-hover;
 
   br {
     display: none;
@@ -33,7 +33,6 @@
 
 .features-list__intro {
   margin: 0 auto;
-  // max-width: 320px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;

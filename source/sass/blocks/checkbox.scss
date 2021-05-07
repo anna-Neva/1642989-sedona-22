@@ -14,13 +14,11 @@
 }
 
 .checkbox__input:focus + .checkbox__box {
-  background-color: $gray-hover;
+  background-color: $grey-hover;
 }
 
 .checkbox__input:checked + .checkbox__box {
-  // left: 10px;
-  // top: 10px;
-  background-color: $gray-checked;
+  background-color: $grey-checked;
   background-image: url("../img/checkbox-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +30,7 @@
   height: 46px;
   margin-top: -5px;
   border-radius: 7px;
-  background-color: $gray;
+  background-color: $grey;
   display: block;
 }
 
