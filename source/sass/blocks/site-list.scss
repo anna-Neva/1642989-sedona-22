@@ -20,7 +20,7 @@
   }
 }
 
-.site-list__link-active {
+.site-list__link--active {
   color: $light-brown;
 
   &:hover,
@@ -29,8 +29,7 @@
   }
 
   &:active {
-    color: $light-brown;
-    opacity: 0.3;
+    color: rgba($light-brown, 0.3);
   }
 }
 

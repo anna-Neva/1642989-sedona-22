@@ -33,7 +33,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link-active" href="form.html">
+            <a class="site-list__link site-list__link--active" href="form.html">
               Форма отзыва
             </a>
           </li>
@@ -90,17 +90,17 @@
             Контактная информация
           </legend>
           <div class="form__group">
-            <p class="form__field form__field--column">
+            <p class="form__field form__field--column form__field--phone">
               <label  class="form__label" for="contact-phone">
-                Контактный телефон*:
+                Телефон*:
               </label>
-              <input class="form__input form__input--phone text-input" type="text" name="phone" id="contact-phone" placeholder="Введите телефон">
+              <input class="form__input text-input" type="tel" name="phone" id="contact-phone" placeholder="Введите телефон">
             </p>
-            <p class="form__field form__field--column">
+            <p class="form__field form__field--column form__field--mail">
               <label class="form__label" for="contact-email">
                 Электронная почта*:
               </label>
-              <input class="form__input form__input--mail text-input" type="text" name="mail" id="contact-email" placeholder="Введите e-mail">
+              <input class="form__input text-input" type="email" name="mail" id="contact-email" placeholder="Введите e-mail">
             </p>
           </div>
         </fieldset>
@@ -111,7 +111,7 @@
           <ul class="form__list radio-button reset-list">
             <li class="radio-button__item">
               <label  class="radio-button__label" for="positive">
-                <input class="radio-button__input visually-hidden" type="radio" name="positive" id="positive" value="positive" checked>
+                <input class="radio-button__input visually-hidden" type="radio" name="review" id="positive" value="positive" checked>
                 <span class="radio-button__name">
                 </span>
                 <span>
@@ -121,7 +121,7 @@
             </li>
             <li class="radio-button__item">
               <label  class="radio-button__label" for="negative">
-                <input class="radio-button__input visually-hidden" type="radio" name="negative" id="negative" value="negative">
+                <input class="radio-button__input visually-hidden" type="radio" name="review" id="negative" value="negative">
                 <span class="radio-button__name">
                 </span>
                 <span>
@@ -131,7 +131,7 @@
             </li>
             <li class="radio-button__item">
               <label  class="radio-button__label" for="dont-know">
-                <input class="radio-button__input visually-hidden" type="radio" name="dont-know" id="dont-know" value="dont-know">
+                <input class="radio-button__input visually-hidden" type="radio" name="review" id="dont-know" value="dont-know">
                 <span class="radio-button__name">
                 </span>
                 <span>
@@ -148,7 +148,7 @@
           <ul class="form__list form__list--place checkbox reset-list">
             <li class="checkbox__item">
               <label  class="checkbox__label" for="bridge">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" id="bridge" value="checkboxlist" checked>
+                <input class="checkbox__input" type="checkbox" name="bridge" id="bridge" value="checkboxlist" checked>
                 <span class="checkbox__box">
                 </span>
                 <span>
@@ -158,7 +158,7 @@
             </li>
             <li class="checkbox__item">
               <label  class="checkbox__label" for="mountain">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="mountain" id="mountain" value="checkboxlist" checked>
+                <input class="checkbox__input" type="checkbox" name="mountain" id="mountain" value="checkboxlist" checked>
                 <span class="checkbox__box">
                 </span>
                 <span>
@@ -168,7 +168,7 @@
             </li>
             <li class="checkbox__item">
               <label  class="checkbox__label" for="park">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="park" id="park" value="checkboxlist" checked>
+                <input class="checkbox__input" type="checkbox" name="park" id="park" value="checkboxlist" checked>
                 <span class="checkbox__box">
                 </span>
                 <span>
@@ -178,7 +178,7 @@
             </li>
             <li class="checkbox__item">
               <label  class="checkbox__label" for="rocks">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="rocks" id="rocks" value="checkboxlist">
+                <input class="checkbox__input" type="checkbox" name="rocks" id="rocks" value="checkboxlist">
                 <span class="checkbox__box">
                 </span>
                 <span>

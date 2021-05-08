@@ -5,6 +5,7 @@
   font-weight: bold;
   position: relative;
   padding-left: 60px;
+  cursor: pointer;
 }
 
 .checkbox__input {
@@ -19,7 +20,7 @@
 
 .checkbox__input:checked + .checkbox__box {
   background-color: $grey-checked;
-  background-image: url("../img/checkbox-checked.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -28,7 +29,7 @@
   position: absolute;
   width: 46px;
   height: 46px;
-  margin-top: -5px;
+  top: -10px;
   border-radius: 7px;
   background-color: $grey;
   display: block;

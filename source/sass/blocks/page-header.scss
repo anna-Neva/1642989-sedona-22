@@ -44,7 +44,7 @@
 
     &:active::before,
     &:active::after {
-      background-color: rgba($black, 30%);
+      background-color: rgba($black, 0.3);
     }
   }
 }
