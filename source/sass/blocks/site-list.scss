@@ -9,13 +9,27 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $blue;
   }
 
   &:active {
     color: $black;
     opacity: 0.3;
+  }
+}
+
+.site-list__link--active {
+  color: $light-brown;
+
+  &:hover,
+  &:focus {
+    color: $dark-brown;
+  }
+
+  &:active {
+    color: rgba($light-brown, 0.3);
   }
 }
 
@@ -45,6 +59,5 @@
     font-size: 14px;
     line-height: 26px;
     color: $black;
-    // width: 20%;
   }
 }

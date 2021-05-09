@@ -1,9 +1,3 @@
-// .feature__promo--bridge {
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   order: 2;
-// }
-
 @media (min-width: $tablet-width) {
   .feature__promo--city {
     order: 2;
@@ -13,4 +7,3 @@
     order: 1;
   }
 }
-

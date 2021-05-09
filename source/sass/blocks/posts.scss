@@ -1,6 +1,10 @@
 .posts__item {
   padding: 22px 20px 15px 20px;
-  border-bottom: 1px solid $gray-hover;
+  border-bottom: 1px solid $grey-hover;
+
+  &:first-child {
+    border-top: 1px solid $grey-hover;
+  }
 }
 
 
@@ -22,10 +26,11 @@
 
     &:first-child {
       width: 100%;
+      border: none;
     }
 
     &:nth-child(odd):not(:first-child) {
-      background-color: $light-gray-active;
+      background-color: $light-grey-active;
     }
   }
 }
@@ -39,6 +44,6 @@
   .posts__item {
     position: relative;
     width: 100% / 3 * 1;
-    background-color: $gray;
+    background-color: $grey;
   }
 }

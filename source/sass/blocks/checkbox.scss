@@ -4,7 +4,8 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  padding-left: 21px;
+  padding-left: 60px;
+  cursor: pointer;
 }
 
 .checkbox__input {
@@ -14,14 +15,12 @@
 }
 
 .checkbox__input:focus + .checkbox__box {
-  background-color: $gray-hover;
+  background-color: $grey-hover;
 }
 
 .checkbox__input:checked + .checkbox__box {
-  // left: 10px;
-  // top: 10px;
-  background-color: $gray-checked;
-  background-image: url("../img/checkbox-checked.svg");
+  background-color: $grey-checked;
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -30,15 +29,18 @@
   position: absolute;
   width: 46px;
   height: 46px;
-  margin-top: -5px;
-  margin-left: 24px;
+  top: -10px;
   border-radius: 7px;
-  background-color: $gray;
+  background-color: $grey;
   display: block;
 }
 
 .checkbox__item {
-  padding-bottom: 54px;
+  margin-bottom: 54px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,11 +51,13 @@
 
   .checkbox__item {
     width: 50%;
+    margin-bottom: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox__item {
     width: 25%;
+    margin-bottom: 73px;
   }
 }

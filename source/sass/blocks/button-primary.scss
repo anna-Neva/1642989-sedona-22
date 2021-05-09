@@ -1,17 +1,16 @@
 .button-primary {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: $white;
-  padding: 14px 32px;
   border: none;
   background-color: $blue;
   border-radius: 0;
   text-transform: uppercase;
+  padding: 14px 33px 18px;
+  display: inline-flex;
 
   &:hover,
   &:focus {
@@ -27,6 +26,12 @@
   }
 
   &:disabled {
-    background-color: $gray-hover;
+    background-color: $grey-hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-primary {
+    padding: 14px 121px 18px;
   }
 }

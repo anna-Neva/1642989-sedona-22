@@ -20,7 +20,7 @@
 
 .advice__item {
   position: relative;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
   text-align: left;
 
   &:last-child {
@@ -30,12 +30,10 @@
   &::before {
     position: absolute;
     top: -10px;
-    // left: 50%;
     left: -50px;
     width: 40px;
     height: 38px;
     content: "";
-    // transform: translateX(-50%);
     background-position: center bottom;
     background-repeat: no-repeat;
   }
@@ -57,12 +55,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .advice__list {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   gap: 20px;
-  // }
-
   .advice {
     padding: 60px 31px 60px 36px;
   }
@@ -70,9 +62,10 @@
   .advice__item {
     position: relative;
     padding: 0 0 27px;
-    text-align: left;
     padding-top: 90px;
     justify-self: center;
+    text-align: center;
+    margin: 0;
 
     &::before {
       position: absolute;
@@ -102,56 +95,31 @@
     }
   }
 
-  .advice__house {
-    left: 50%;
-    margin-left: -38px;
-    width: 75px;
-    height: 72px;
-    background-image: url("../img/icon-house-tablet.svg");
-  }
-
-  .advice__souvenirs {
-    left: 50%;
-    margin-left: -32px;
-    width: 64px;
-    height: 75px;
-    background-image: url("../img/icon-gift-tablet.svg");
-  }
-
-  .advice__food {
-    left: 50%;
-    margin-left: -38px;
-    width: 76px;
-    height: 68px;
-    background-image: url("../img/icon-burger-tablet.svg");
-  }
-
   .advice__item--lodging {
-    width: 185px;
-    order: 1;
+    max-width: 180px;
   }
 
   .advice__item--souvenirs {
-    width: 193px;
+    max-width: 193px;
     order: 3;
   }
 
   .advice__item--food {
-    width: 180px;
+    max-width: 180px;
     order: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advice__item--lodging {
-    width: 282px;
+    max-width: 282px;
   }
 
   .advice__item--souvenirs {
-    width: 313px;
+    max-width: 313px;
   }
 
   .advice__item--food {
-    width: 244px;
+    max-width: 244px;
   }
 }
