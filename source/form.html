@@ -9,19 +9,13 @@
 <body class="page__body">
   <div class="container">
     <header class="page-header page-header--opened">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
-      </a>
-      <a class="page-header__logodesktop">
-        <img src="img/logotype-desktop.svg" width="187" height="97" alt="логотип седона десктоп">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list site-list reset-list">
+      <nav class="page-header__nav">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="page-header__list site-list reset-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
               Главная
@@ -44,6 +38,12 @@
           </li>
         </ul>
       </nav>
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
+      </a>
+      <!-- <a class="page-header__logodesktop" href="index.html">
+        <img src="img/logotype-desktop.svg" width="187" height="97" alt="логотип седона десктоп">
+      </a> -->
     </header>
     <main class="page-main">
       <section class="page-main__feedback feedback promo">
@@ -85,7 +85,7 @@
             <input class="form__input text-input text-input--icon" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </p>
         </fieldset>
-        <fieldset class="form__item form__item--contact">
+        <fieldset class="form__item form__item--contact form__item--decorated">
           <legend class="form__name">
             Контактная информация
           </legend>
@@ -141,9 +141,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item form__item--place">
+        <fieldset class="form__item form__item--place form__item--decorated">
           <legend class="form__name">
-            Посещенные достопримечательности:
+            Посещенные<br> достопримечательности:
           </legend>
           <ul class="form__list form__list--place checkbox reset-list">
             <li class="checkbox__item">
@@ -188,7 +188,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item form__item--feedback">
+        <fieldset class="form__item form__item--feedback form__item--decorated">
           <legend class="form__name">
             Опишите свои эмоции:
           </legend>

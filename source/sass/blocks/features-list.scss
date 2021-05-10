@@ -19,8 +19,8 @@
 
 .features-list__slogan {
   margin: 0 0 15px;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 15px;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 25px;
@@ -46,6 +46,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 42px 0 41px;
+  }
+
+  .features-list__slogan {
+    font-size: 21px;
+    line-height: 21px;
   }
 
   .features-list__item {
