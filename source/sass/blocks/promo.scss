@@ -17,7 +17,7 @@
 }
 
 .promo__banner {
-  padding: 90px 0 85px;
+  padding: 86px 0 85px;
   background-image: url("../img/promo-banner-mobile-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,9 +97,8 @@
 
   .promo__banner img {
     width: 460px;
-    position: relative;
-    padding-top: 95px;
-    padding-bottom: 117px;
+    height: 350px;
+    // position: relative;
   }
 
   .promo__triangle {
@@ -119,6 +118,10 @@
 
   .promo__slogan {
     font-size: 30px;
+  }
+
+  .promo__slogan--small {
+    font-size: 21px;
   }
 }
 

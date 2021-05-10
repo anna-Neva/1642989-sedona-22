@@ -45,10 +45,10 @@
 
   &--place {
     padding: 0 20px 39px 24px;
+  }
 
-    .form__name {
-      margin-bottom: 25px;
-    }
+  .form__name {
+    margin-bottom: 25px;
   }
 }
 
@@ -68,16 +68,6 @@
   }
 }
 
-.form__textarea {
-  resize: none;
-  padding: 13px 23px 29px 21px;
-  border: border-box;
-  background-color: $grey;
-  border-radius: 3px;
-  height: 160px;
-  width: 100%;
-}
-
 .form__submit {
   display: block;
   margin: 0 auto;
@@ -88,37 +78,12 @@
   display: none;
 }
 
-// .form__group {
-//   position: relative;
-
-//   &:first-child {
-//     position: absolute;
-//     content: "";
-//     width: 58px;
-//     height: 58px;
-//     background-color: $grey-icon;
-//     bottom: 0;
-//     right: 0;
-//     box-sizing: border-box;
-//   }
-
-//   &:second-child {
-//     position: absolute;
-//     content: "";
-//     width: 58px;
-//     height: 58px;
-//     background-color: $grey-icon;
-//     bottom: 0;
-//     right: 0;
-//     box-sizing: border-box;
-//   }
-// }
-
 @media (min-width: $tablet-width) {
   .form {
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
+    padding-bottom: 97px;
   }
 
   .form__label {
@@ -137,86 +102,54 @@
     }
   }
 
+  .form__item {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
   .form__submit {
     margin: 0;
     padding: 18px 30px 14px 49px;
     width: 324px;
   }
 
-  .form__item--contact::before {
-    position: absolute;
-    content: "";
-    height: 123px;
-    border-top: 1px solid $grey-stick;
-    left: 0;
-    top: 5px;
-  }
-
   .form__item--emotion {
     order: 1;
     width: 50%;
-    border: none;
-    margin: 0;
-    padding: 0;
     position: relative;
 
     .form__name {
       margin-bottom: 70px;
       text-align: left;
-    }
 
-    &::after {
-      position: absolute;
-      content: "";
-      height: 292px;
-      border-right: 1px solid $grey-stick;
-      right: 0;
-      bottom: 15px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        border-right: 1px solid $grey-stick;
+        right: 0;
+        top: -15px;
+      }
     }
   }
 
   .form__item--name {
     order: 2;
     width: 50%;
-    border: none;
-    padding: 0;
     padding-left: 58px;
-    margin-top: 0;
 
     .form__name {
       margin-bottom: 54px;
     }
   }
 
-  .form__item--place {
-    order: 4;
-    width: 100%;
-    border: none;
-    margin: 0;
-    padding: 0;
-
-    .form__name {
-      margin-bottom: 47px;
-    }
-  }
-
   .form__item--feedback {
     order: 5;
     width: 100%;
-    border: none;
-    padding: 0;
 
     .form__name {
       margin-bottom: 55px;
-    }
-  }
-
-  .form__list--place {
-    padding: 0 100px;
-    border: none;
-
-    .form__name {
-      margin-top: 47px;
     }
   }
 
@@ -227,14 +160,11 @@
     order: 6;
     width: 100%;
     margin-top: 58px;
-    margin-bottom: 97px;
   }
 
   .form__item--contact {
     width: 100%;
     order: 3;
-    border: none;
-    padding: 0;
     margin-top: 72px;
     margin-bottom: 52px;
 
@@ -249,6 +179,53 @@
 
   .form__field {
     text-align: left;
+  }
+
+  // .form__item--contact,
+  // .form__item--place,
+  // .form__item--feedback {
+  .form__item--decorated {
+    position: relative;
+
+    .form__name {
+      position: relative;
+      z-index: 1;
+      padding: 0 64px;
+      background-color: $white;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: -35px;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $grey-stick;
+    }
+  }
+
+  .form__item--place {
+    padding: 0 100px;
+    order: 4;
+    width: 100%;
+
+    .form__name {
+      margin-bottom: 47px;
+    }
+
+    &::after {
+      top: -75px;
+    }
+  }
+
+  .form__item--feedback {
+    .form__name {
+    }
+
+    &::after {
+      top: -70px;
+    }
   }
 }
 
@@ -291,6 +268,15 @@
     }
   }
 
+  .form__item--place {
+    position: relative;
+    padding: 0;
+
+    .form__name::after {
+      top: -65px;
+    }
+  }
+
   .form__input {
     max-width: 316px;
   }
@@ -299,11 +285,7 @@
     flex-direction: row;
   }
 
-  .form__list--place {
-    padding: 0;
-  }
-
   .form__name {
-    max-width: 308px;
+    max-width: 400px;
   }
 }
