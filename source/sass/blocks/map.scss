@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 }
 
 
@@ -12,6 +16,10 @@
   .map {
     background-image: url("../img/map-tablet.jpg");
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -19,5 +27,9 @@
   .map {
     background-image: url("../img/map-desktop.jpg");
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktpo@2x.jpg");
+    }
   }
 }

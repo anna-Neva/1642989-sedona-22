@@ -39,14 +39,16 @@
         </ul>
       </nav>
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg 1x">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg 1x">
+          <img src="img/logotype-mobile.svg" alt="Логотип седона">
+        </picture>
+        <!-- <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип седона"> -->
       </a>
-      <!-- <a class="page-header__logodesktop" href="index.html">
-        <img src="img/logotype-desktop.svg" width="187" height="97" alt="логотип седона десктоп">
-      </a> -->
     </header>
     <main class="page-main promo">
-      <div class="promo__banner">
+      <div class="promo__banner promo__banner--catalog">
         <img src="img/banner-mobile-catalog.svg" width="229" height="39" alt="Sedona">
       </div>
       <h1 class="visually-hidden">
@@ -65,7 +67,12 @@
         <ul class="posts__list reset-list">
           <li class="posts__item post post--promo">
             <a class="post__link" href="#">
-              <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Фото неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото неродные просторы">
+              </picture>
+              <!-- <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Фото неродные просторы"> -->
             </a>
             <div class="post__desc">
               <div class="post__info">
@@ -83,7 +90,12 @@
           </li>
           <li class="posts__item post">
             <a class="post__link" href="#">
-              <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Фото местная растительность">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото местная растительность">
+            </picture>
+              <!-- <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Фото местная растительность"> -->
             </a>
             <div class="post__desc">
               <div class="post__info">
@@ -101,7 +113,12 @@
           </li>
           <li class="posts__item post">
             <a class="post__link" href="#">
-              <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Фото дорога на север">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото дорога на север">
+            </picture>
+              <!-- <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Фото дорога на север"> -->
             </a>
             <div class="post__desc">
               <div class="post__info">
@@ -119,7 +136,12 @@
           </li>
           <li class="posts__item post">
             <a class="post__link" href="#">
-              <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Фото мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото мост дьявола">
+              </picture>
+              <!-- <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Фото мост дьявола"> -->
             </a>
             <div class="post__desc">
               <div class="post__info">
@@ -147,7 +169,12 @@
         </p>
         <div class="video__screen">
           <a href="#" class="video__link">
-            <img src="img/video-mobile.jpg" width="320" height="201" alt="Скриншот видео">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Скриншот видео">
+            </picture>
+            <!-- <img src="img/video-mobile.jpg" width="320" height="201" alt="Скриншот видео"> -->
           </a>
           <div class="video__controls">
             <div class="video__scale">

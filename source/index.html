@@ -39,7 +39,12 @@
           </ul>
         </nav>
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg 1x">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg 1x">
+            <img src="img/logotype-mobile.svg" alt="Логотип седона">
+          </picture>
+          <!-- <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип седона"> -->
         </a>
       </header>
       <main class="page-main">
@@ -48,7 +53,7 @@
         </h1>
         <section class="promo">
           <div class="container">
-            <div class="promo__banner">
+            <div class="promo__banner promo__banner--index">
               <img src="img/banner-mobile.svg" width="282" height="214" alt="Wellcome to Sedona">
             </div>
             <div class="promo__description">
@@ -79,7 +84,12 @@
               </p>
             </div>
             <div class="features__img">
-              <img src="img/photo-city-mobile.jpg" width="520" height="260" alt="Фото города">
+              <!-- <img src="img/photo-city-mobile.jpg" width="520" height="260" alt="Фото города"> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Фото города">
+              </picture>
             </div>
             <ul class="features__advice advice reset-list">
               <li class="advice__item advice__item--lodging">
@@ -126,7 +136,12 @@
               </p>
             </div>
             <div class="features__img">
-              <img src="img/photo-bridge-mobile.jpg" width="520" height="260" alt="Фото мост">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост">
+              </picture>
+              <!-- <img src="img/photo-bridge-mobile.jpg" width="520" height="260" alt="Фото мост"> -->
             </div>
           </div>
           <ul class="features__item features-list reset-list">

@@ -151,6 +151,10 @@
     .form__name {
       margin-bottom: 55px;
     }
+
+    &::after {
+      top: -70px;
+    }
   }
 
   .form__message {
@@ -216,15 +220,6 @@
 
     &::after {
       top: -75px;
-    }
-  }
-
-  .form__item--feedback {
-    .form__name {
-    }
-
-    &::after {
-      top: -70px;
     }
   }
 }

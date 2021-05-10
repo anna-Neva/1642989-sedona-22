@@ -39,15 +39,17 @@
         </ul>
       </nav>
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg 1x">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg 1x">
+          <img src="img/logotype-mobile.svg" alt="Логотип седона">
+        </picture>
+        <!-- <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип седона"> -->
       </a>
-      <!-- <a class="page-header__logodesktop" href="index.html">
-        <img src="img/logotype-desktop.svg" width="187" height="97" alt="логотип седона десктоп">
-      </a> -->
     </header>
     <main class="page-main">
       <section class="page-main__feedback feedback promo">
-        <div class="promo__banner">
+        <div class="promo__banner promo__banner--catalog">
           <img src="img/banner-mobile-catalog.svg" width="229" height="39" alt="Sedona">
         </div>
         <section class="feedback__specification">
