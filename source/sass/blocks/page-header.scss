@@ -32,8 +32,6 @@
   position: absolute;
   z-index: 1;
   left: 50%;
-  // top: 0;
-  // bottom: auto;
   bottom: -28px;
   transform: translate(-50%);
 }
@@ -67,10 +65,6 @@
   background-color: $blue;
 }
 
-// .page-header__logodesktop {
-//   display: none;
-// }
-
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: auto;
@@ -97,20 +91,4 @@
     display: flex;
     padding: 16px 0 14px;
   }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    display: none;
-  }
-
-  // .page-header__logodesktop {
-  //   display: block;
-  //   height: 84px;
-  //   position: absolute;
-  //   z-index: 1;
-  //   left: 50%;
-  //   top: 0;
-  //   transform: translate(-50%);
-  // }
 }

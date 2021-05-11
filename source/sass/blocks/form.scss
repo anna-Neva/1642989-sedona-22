@@ -108,29 +108,23 @@
     border: none;
   }
 
-  .form__submit {
-    margin: 0;
-    padding: 18px 30px 14px 49px;
-    width: 324px;
-  }
-
   .form__item--emotion {
     order: 1;
     width: 50%;
     position: relative;
 
+    &::after {
+      position: absolute;
+      content: "";
+      height: 140%;
+      border-right: 1px solid $grey-stick;
+      right: 0;
+      top: -90px;
+    }
+
     .form__name {
       margin-bottom: 70px;
       text-align: left;
-
-      &::after {
-        position: absolute;
-        content: "";
-        height: 100%;
-        border-right: 1px solid $grey-stick;
-        right: 0;
-        top: -15px;
-      }
     }
   }
 
@@ -150,6 +144,10 @@
 
     .form__name {
       margin-bottom: 55px;
+    }
+
+    &::after {
+      top: -70px;
     }
   }
 
@@ -181,9 +179,6 @@
     text-align: left;
   }
 
-  // .form__item--contact,
-  // .form__item--place,
-  // .form__item--feedback {
   .form__item--decorated {
     position: relative;
 
@@ -215,17 +210,14 @@
     }
 
     &::after {
-      top: -75px;
+      top: -70px;
     }
   }
 
-  .form__item--feedback {
-    .form__name {
-    }
-
-    &::after {
-      top: -70px;
-    }
+  .form__submit {
+    margin: 0;
+    padding: 18px 30px 14px 49px;
+    width: 324px;
   }
 }
 

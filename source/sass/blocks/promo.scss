@@ -17,8 +17,7 @@
 }
 
 .promo__banner {
-  padding: 86px 0 85px;
-  background-image: url("../img/promo-banner-mobile-catalog.jpg");
+  // padding: 86px 0 85px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -36,6 +35,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 57px;
+  }
+
+
+  &--index {
+    padding: 86px 0 85px;
+    background-image: url("../img/promo-banner-mobile-index.jpg");
+  }
+
+  &--catalog {
+    padding: 52px 0 67px;
+    background-image: url("../img/promo-banner-mobile-catalog.jpg");
+    background-position: bottom;
   }
 }
 
@@ -73,32 +84,54 @@
   }
 
   .promo__banner {
-    background-image: url("../img/promo-banner-tablet-catalog.jpg");
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 117px;
 
-    .promo__banner {
-      position: relative;
-      padding-top: 86px;
-      padding-bottom: 117px;
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 56px;
+      content: "";
+      background-image: url("../img/triangle-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 57px;
+    }
 
-      &::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 57px;
-        content: "";
-        background-image: url("../img/triangle-tablet.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 56px;
+    &::before {
+      display: none;
+    }
+
+    &--index {
+      background-image: url("../img/promo-banner-tablet-index.jpg");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-banner-tablet-index@2x.jpg");
+      }
+    }
+
+    &--catalog {
+      background-image: url("../img/promo-banner-tablet-catalog.jpg");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-banner-tablet-catalog@2x.jpg");
       }
     }
   }
 
-  .promo__banner img {
-    width: 460px;
+  .promo__banner--index img {
     height: 350px;
-    // position: relative;
+    width: 461px;
+  }
+
+  .promo__banner--catalog img {
+    height: 78px;
+    width: 457px;
   }
 
   .promo__triangle {
@@ -127,9 +160,27 @@
 
 @media (min-width: $desktop-width) {
   .promo__banner {
-    background-image: url("../img/promo-banner-desktop.jpg");
+    // background-image: url("../img/promo-banner-desktop.jpg");
     padding-top: 95px;
     padding-bottom: 120px;
+
+    &--index {
+      background-image: url("../img/promo-banner-desktop-index.jpg");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-banner-desktop-index@2x.jpg");
+      }
+    }
+
+    &--catalog {
+      background-image: url("../img/promo-banner-desktop-catalog.jpg");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-banner-desktop-catalog@2x.jpg");
+      }
+    }
   }
 
   .promo__specification {
