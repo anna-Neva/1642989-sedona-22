@@ -9,13 +9,6 @@
   padding: 32px 0 11px;
 }
 
-.promo__triangle {
-  top: 332px;
-  background-image: url("../img/white-banner-mobile.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-}
-
 .promo__banner {
   // padding: 86px 0 85px;
   background-repeat: no-repeat;
@@ -41,11 +34,19 @@
   &--index {
     padding: 86px 0 85px;
     background-image: url("../img/promo-banner-mobile-index.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-banner-mobile-index@2x.jpg");
+    }
   }
 
-  &--catalog {
+  &--inner {
     padding: 52px 0 67px;
-    background-image: url("../img/promo-banner-mobile-catalog.jpg");
+    background-image: url("../img/promo-banner-mobile-inner.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-banner-mobile-inner@2x.jpg");
+    }
     background-position: bottom;
   }
 }
@@ -115,11 +116,11 @@
     }
 
     &--catalog {
-      background-image: url("../img/promo-banner-tablet-catalog.jpg");
+      background-image: url("../img/promo-banner-tablet-inner.jpg");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-banner-tablet-catalog@2x.jpg");
+        background-image: url("../img/promo-banner-tablet-inner@2x.jpg");
       }
     }
   }
@@ -132,15 +133,6 @@
   .promo__banner--catalog img {
     height: 78px;
     width: 457px;
-  }
-
-  .promo__triangle {
-    position: absolute;
-    background-image: url("../img/white-triangle-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 150px;
-    left: 50%;
   }
 
   .promo__specification {
@@ -174,11 +166,11 @@
     }
 
     &--catalog {
-      background-image: url("../img/promo-banner-desktop-catalog.jpg");
+      background-image: url("../img/promo-banner-desktop-inner.jpg");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-banner-desktop-catalog@2x.jpg");
+        background-image: url("../img/promo-banner-desktop-inner@2x.jpg");
       }
     }
   }
