@@ -10,7 +10,6 @@
 }
 
 .promo__banner {
-  // padding: 86px 0 85px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -115,7 +114,7 @@
       }
     }
 
-    &--catalog {
+    &--inner {
       background-image: url("../img/promo-banner-tablet-inner.jpg");
       background-size: cover;
 
@@ -130,7 +129,7 @@
     width: 461px;
   }
 
-  .promo__banner--catalog img {
+  .promo__banner--inner img {
     height: 78px;
     width: 457px;
   }
@@ -152,7 +151,6 @@
 
 @media (min-width: $desktop-width) {
   .promo__banner {
-    // background-image: url("../img/promo-banner-desktop.jpg");
     padding-top: 95px;
     padding-bottom: 120px;
 
@@ -165,7 +163,7 @@
       }
     }
 
-    &--catalog {
+    &--inner {
       background-image: url("../img/promo-banner-desktop-inner.jpg");
       background-size: cover;
 
