@@ -10,11 +10,26 @@
   width: 121px;
 }
 
-.copyright__link-icon:hover,
-.copyright__link-icon:focus {
-  background-image: url("../img/logo-htmlacademy-hover.svg");
+// .copyright__link-icon:hover,
+// .copyright__link-icon:focus {
+//   background-image: url("../img/logo-htmlacademy-hover.svg");
+// }
+
+// .copyright__link-icon:active {
+//   background-image: url("../img/logo-htmlacademy-active.svg");
+// }
+
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+  color: $black;
 }
 
-.copyright__link-icon:active {
-  background-image: url("../img/logo-htmlacademy-active.svg");
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  color: $blue;
+}
+
+.copyright__link:active svg {
+  color: rgba($black, 0.3);
 }

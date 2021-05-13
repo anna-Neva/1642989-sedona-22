@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Сайт городка sedona</title>
   </head>
 <body class="page__body">
+  <div style="display: none">
+    <include src="build/img/sprite.svg">
+    </include>
+  </div>
   <div class="container">
     <header class="page-header page-header--opened">
       <nav class="page-header__nav">
@@ -248,7 +252,10 @@
             Разработано
           </span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="логотип htmlacademy">
+            <!-- <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="логотип htmlacademy"> -->
+            <svg>
+              <use xlink:href="#logo-htmlacademy" width="27" height="34"></use>
+            </svg>
           </a>
         </div>
     </footer>
