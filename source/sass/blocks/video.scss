@@ -65,24 +65,57 @@
   cursor: pointer;
 
   &--replay {
-    background-image: url("../img/replay.svg");
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    svg {
+      color: $grey-replay;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      background-color: $light-black;
+    }
+
+    &:active svg {
+      background-color: $light-black;
+      opacity: 0.3;
+    }
   }
 
   &--subtitle {
-    background-image: url("../img/subtitles.svg");
     margin-left: auto;
     margin-right: 31px;
     margin-top: 20px;
+    color: $grey-replay;
+
+    .form__input:hover,
+    .form__input:focus {
+      background-color: $light-black;
+    }
+
+    .form__input:active {
+      background-color: $light-black;
+      opacity: 0.3;
+    }
   }
 
   &--fullscreen {
-    background-image: url("../img/fullscreen.svg");
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    color: $grey-replay;
+
+    .form__input:hover,
+    .form__input:focus {
+      background-color: $light-black;
+    }
+
+    .form__input:active {
+      background-color: $light-black;
+      opacity: 0.3;
+    }
   }
 
   &--thumb {
@@ -169,6 +202,19 @@
     &--replay {
       order: -1;
       margin-right: 42px;
+      color: $white;
+
+
+      .form__input:hover,
+      .form__input:focus {
+        background-color: $white;
+        opacity: 0.6;
+      }
+
+      .form__input:active {
+        background-color: $white;
+        opacity: 0.3;
+      }
     }
 
     &--subtitle {

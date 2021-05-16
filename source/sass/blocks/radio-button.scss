@@ -40,6 +40,10 @@
   background-color: $grey-hover;
 }
 
+.radio-button__input:active + .radio-button__name {
+  background-color: $grey-checked;
+}
+
 .radio-button__input:checked + .radio-button__name::after {
   display: block;
 }

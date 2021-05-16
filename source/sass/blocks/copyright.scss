@@ -10,18 +10,8 @@
   width: 121px;
 }
 
-// .copyright__link-icon:hover,
-// .copyright__link-icon:focus {
-//   background-image: url("../img/logo-htmlacademy-hover.svg");
-// }
-
-// .copyright__link-icon:active {
-//   background-image: url("../img/logo-htmlacademy-active.svg");
-// }
-
-.copyright__link svg {
-  width: 27px;
-  height: 34px;
+.copyright__link {
+  display: flex;
   color: $black;
 }
 

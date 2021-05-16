@@ -13,8 +13,6 @@ const svgstore = require("gulp-svgstore");
 const rename = require("gulp-rename");
 const del = require("del");
 const csso = require("postcss-csso");
-const posthtml = require("gulp-posthtml");
-const include = require("posthtml-include");
 
 // Styles
 
@@ -23,6 +21,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -39,9 +38,6 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
