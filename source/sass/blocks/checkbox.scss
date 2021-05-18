@@ -8,10 +8,12 @@
   cursor: pointer;
 }
 
-.checkbox__input {
+.checkbox__box svg {
+  display: none;
   position: absolute;
-  display: block;
-  margin-bottom: -21px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .checkbox__input:focus + .checkbox__box,
@@ -20,10 +22,17 @@
 }
 
 .checkbox__input:checked + .checkbox__box {
+  svg {
+    display: block;
+  }
+}
+
+.checkbox__input:active + .checkbox__box {
   background-color: $grey-checked;
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
+  svg {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__box {

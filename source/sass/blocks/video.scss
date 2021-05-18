@@ -10,7 +10,6 @@
   }
 }
 
-
 .video__slogan {
   margin: 0;
   font-size: 18px;
@@ -63,26 +62,53 @@
   height: 20px;
   padding: 0;
   cursor: pointer;
+  color: $video-button-grey;
 
   &--replay {
-    background-image: url("../img/replay.svg");
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    &:hover svg,
+    &:focus svg {
+      color: $light-black;
+    }
+
+    &:active svg {
+      color: rgba($light-black, 0.3);
+    }
   }
 
   &--subtitle {
-    background-image: url("../img/subtitles.svg");
     margin-left: auto;
     margin-right: 31px;
     margin-top: 20px;
+    color: $video-button-grey;
+
+    &:hover,
+    &:focus {
+      color: $light-black;
+    }
+
+    &:active {
+      color: rgba($light-black, 0.3);
+    }
   }
 
   &--fullscreen {
-    background-image: url("../img/fullscreen.svg");
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    color: $video-button-grey;
+
+    &:hover,
+    &:focus {
+      color: $light-black;
+    }
+
+    &:active {
+      color: rgba($light-black, 0.3);
+    }
   }
 
   &--thumb {
@@ -165,10 +191,20 @@
 
   .video__button {
     margin: 0;
+    color: $white;
 
     &--replay {
       order: -1;
       margin-right: 42px;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
     }
 
     &--subtitle {

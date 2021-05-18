@@ -1,6 +1,5 @@
 .radio-button__label {
   position: relative;
-  padding-bottom: 43px;
   padding-left: 60px;
   font-size: 18px;
   line-height: 26px;
@@ -32,7 +31,7 @@
 }
 
 .radio-button__item {
-  padding-bottom: 43px;
+  margin-bottom: 43px;
 }
 
 .radio-button__input:hover + .radio-button__name,
@@ -40,12 +39,20 @@
   background-color: $grey-hover;
 }
 
+.radio-button__input:active + .radio-button__name {
+  background-color: $grey-checked;
+}
+
+.radio-button__input:active + .radio-button__name::after {
+  opacity: 0.3;
+}
+
 .radio-button__input:checked + .radio-button__name::after {
   display: block;
 }
 
 @media (min-width: $tablet-width) {
-  .radio-button__label {
+  .radio-button__iteml {
     margin-bottom: 51px;
   }
 }
