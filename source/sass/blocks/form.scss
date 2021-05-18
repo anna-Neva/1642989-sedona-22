@@ -186,19 +186,6 @@
     }
   }
 
-  .form__item--feedback {
-    order: 5;
-    width: 100%;
-
-    .form__name {
-      margin-bottom: 55px;
-    }
-
-    &::after {
-      top: -70px;
-    }
-  }
-
   .form__message {
     display: flex;
     justify-content: space-between;
@@ -255,6 +242,19 @@
 
     .form__name {
       margin-bottom: 47px;
+    }
+
+    &::after {
+      top: -70px;
+    }
+  }
+
+  .form__item--feedback {
+    order: 5;
+    width: 100%;
+
+    .form__name {
+      margin-bottom: 55px;
     }
 
     &::after {
@@ -328,4 +328,21 @@
   .form__name {
     max-width: 400px;
   }
+
+  .form__field {
+    &--phone {
+      &::before {
+        right: auto;
+        left: 343px;
+      }
+    }
+
+    &--mail {
+      &::before {
+        right: auto;
+        left: 423px;
+      }
+    }
+  }
 }
+

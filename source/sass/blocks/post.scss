@@ -22,25 +22,11 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  // padding-left: 37px;
 
   svg {
     margin-right: 14px;
-    color: $black;
-    opacity: 0.3;
+    color: rgba($black, 0.3);
   }
-
-  // &::before {
-  //   position: absolute;
-  //   left: 0;
-  //   width: 23px;
-  //   height: 21px;
-  //   content: "";
-  //   background-position: center bottom;
-  //   background-repeat: no-repeat;
-  //   // background-image: url("../img/icon-like.svg");
-  //   background-size: 23px 21px;
-  // }
 }
 
 .post__link {
@@ -110,7 +96,6 @@
   .post__likes {
     svg {
       color: $white;
-      opacity: 1;
     }
   }
 }

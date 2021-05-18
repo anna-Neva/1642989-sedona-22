@@ -42,10 +42,15 @@
 
 .radio-button__input:active + .radio-button__name {
   background-color: $grey-checked;
+
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .radio-button__input:checked + .radio-button__name::after {
   display: block;
+  background-color: $grey-checked;
 }
 
 @media (min-width: $tablet-width) {

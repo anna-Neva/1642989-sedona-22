@@ -63,24 +63,20 @@
   height: 20px;
   padding: 0;
   cursor: pointer;
+  color: $video-button-grey;
 
   &--replay {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 
-    svg {
-      color: $grey-replay;
-    }
-
     &:hover svg,
     &:focus svg {
-      background-color: $light-black;
+      color: $light-black;
     }
 
     &:active svg {
-      background-color: $light-black;
-      opacity: 0.3;
+      color: rgba($light-black, 0.3);
     }
   }
 
@@ -88,16 +84,15 @@
     margin-left: auto;
     margin-right: 31px;
     margin-top: 20px;
-    color: $grey-replay;
+    color: $video-button-grey;
 
-    .form__input:hover,
-    .form__input:focus {
-      background-color: $light-black;
+    &:hover,
+    &:focus {
+      color: $light-black;
     }
 
-    .form__input:active {
-      background-color: $light-black;
-      opacity: 0.3;
+    &:active {
+      color: rgba($light-black, 0.3);
     }
   }
 
@@ -105,16 +100,15 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
-    color: $grey-replay;
+    color: $video-button-grey;
 
-    .form__input:hover,
-    .form__input:focus {
-      background-color: $light-black;
+    &:hover,
+    &:focus {
+      color: $light-black;
     }
 
-    .form__input:active {
-      background-color: $light-black;
-      opacity: 0.3;
+    &:active {
+      color: rgba($light-black, 0.3);
     }
   }
 
@@ -198,22 +192,19 @@
 
   .video__button {
     margin: 0;
+    color: $white;
 
     &--replay {
       order: -1;
       margin-right: 42px;
-      color: $white;
 
-
-      .form__input:hover,
-      .form__input:focus {
-        background-color: $white;
-        opacity: 0.6;
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
       }
 
-      .form__input:active {
-        background-color: $white;
-        opacity: 0.3;
+      &:active {
+        color: rgba($white, 0.3);
       }
     }
 

@@ -33,6 +33,7 @@
   &--index {
     padding: 86px 0 85px;
     background-image: url("../img/promo-banner-mobile-index.jpg");
+    background-color: $blue;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-banner-mobile-index@2x.jpg");
@@ -42,6 +43,7 @@
   &--inner {
     padding: 52px 0 67px;
     background-image: url("../img/promo-banner-mobile-inner.jpg");
+    background-color: $blue;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-banner-mobile-inner@2x.jpg");
