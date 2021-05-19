@@ -17,7 +17,7 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding: 32px 27px 33px;
+  padding: 33px 27px 27px;
 }
 
 .video__intro {
@@ -26,7 +26,7 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 27px;
+  padding-bottom: 33px;
   max-width: 266px;
 }
 
@@ -65,8 +65,8 @@
   color: $video-button-grey;
 
   &--replay {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 22px;
+    margin-top: 22px;
     margin-bottom: 20px;
 
     &:hover svg,
@@ -81,8 +81,8 @@
 
   &--subtitle {
     margin-left: auto;
-    margin-right: 31px;
-    margin-top: 20px;
+    margin-right: 25px;
+    margin-top: 23px;
     color: $video-button-grey;
 
     &:hover,
@@ -96,9 +96,9 @@
   }
 
   &--fullscreen {
-    margin-right: 20px;
+    margin-right: 24px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 23px;
     color: $video-button-grey;
 
     &:hover,
@@ -209,7 +209,29 @@
 
     &--subtitle {
       margin-left: 42px;
-      margin-right: 31px;
+      margin-right: 39px;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
+    }
+
+    &--fullscreen {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
     }
 
     &--thumb {
@@ -219,16 +241,21 @@
 
   .video__slogan {
     font-size: 30px;
+    padding-top: 0;
   }
 
   .video__intro {
     max-width: 445px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .video {
-    padding-bottom: 85px;
+    padding-bottom: 120px;
+
+    &__slogan {
+      padding-bottom: 30px;
+    }
   }
 }
