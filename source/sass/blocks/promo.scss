@@ -110,8 +110,8 @@
 
   .promo__banner {
     position: relative;
-    padding-top: 75px;
-    padding-bottom: 93px;
+    // padding-top: 75px;
+    // padding-bottom: 93px;
 
     &::after {
       position: absolute;
@@ -131,6 +131,8 @@
     }
 
     &--index {
+      padding-top: 75px;
+      padding-bottom: 93px;
       background-image: url("../img/promo-banner-tablet-index.jpg");
       background-size: cover;
 
@@ -140,6 +142,8 @@
     }
 
     &--inner {
+      padding-top: 95px;
+      padding-bottom: 119px;
       background-image: url("../img/promo-banner-tablet-inner.jpg");
       background-size: cover;
 
@@ -158,6 +162,16 @@
     height: 78px;
     width: 457px;
   }
+
+  // .promo__banner--index {
+  //   padding-top: 75px;
+  //   padding-bottom: 93px;
+  // }
+
+  // .promo__banner--inner {
+  //   padding-top: 95px;
+  //   padding-bottom: 119px;
+  // }
 
   .promo__specification {
     padding: 60px 0 80px;
@@ -193,6 +207,8 @@
     padding-bottom: 120px;
 
     &--index {
+      padding-top: 80px;
+      padding-bottom: 87px;
       background-image: url("../img/promo-banner-desktop-index.jpg");
       background-size: cover;
 
@@ -202,6 +218,8 @@
     }
 
     &--inner {
+      padding-top: 100px;
+      padding-bottom: 120px;
       background-image: url("../img/promo-banner-desktop-inner.jpg");
       background-size: cover;
 
@@ -211,11 +229,25 @@
     }
   }
 
-  .promo__specification {
-    padding: 102px 0 80px;
-  }
+  // .promo__banner {
+  //   &--inner {
+  //     padding-top: 100px;
+  //     padding-bottom: 120px;
+  //   }
+
+  //   &--index {
+  //     padding-top: 80px;
+  //     padding-bottom: 87px;
+  //   }
+  // }
 
   .promo__description {
+    margin-top: 55px;
+    margin-bottom: 41px;
     max-width: 493px;
+  }
+
+  .promo__specification {
+    padding: 102px 0 80px;
   }
 }

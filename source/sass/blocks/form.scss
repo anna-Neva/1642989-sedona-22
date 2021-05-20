@@ -63,7 +63,7 @@
     }
 
     .form__name {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
 
       .form__label {
         margin-right: 10px;
@@ -73,6 +73,11 @@
 
   &--name {
     padding: 20px 20px 25px 20px;
+
+    .form__input {
+      padding-left: 30px;
+      padding-top: 12px;
+    }
   }
 
   &--emotion {
@@ -105,6 +110,11 @@
   &--column {
     flex-direction: column;
     align-items: flex-start;
+
+    .form__label {
+      padding-left: 0;
+      margin-bottom: 5px;
+    }
   }
 
   &--phone {
@@ -125,7 +135,7 @@
   }
 
   .form__label {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 
   &--mail {
@@ -148,8 +158,7 @@
 
 .form__submit {
   display: block;
-  margin: 0 auto;
-  margin-top: 51px;
+  margin: 51px auto 65px;
   padding: 18px 47px 14px;
 }
 
@@ -161,8 +170,7 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px;
-    padding-bottom: 90px;
+    padding: 0 60px 60px;
   }
 
   .form__name {
@@ -225,6 +233,14 @@
       margin-bottom: 54px;
       text-align: left;
     }
+
+    .form__label {
+      margin-bottom: 0;
+    }
+
+    .form__input {
+      padding-left: 20px;
+    }
   }
 
   .form__message {
@@ -233,22 +249,17 @@
     align-items: center;
     order: 6;
     width: 100%;
-    margin-top: 58px;
+    margin-top: 55px;
   }
 
   .form__item--contact {
     width: 100%;
     order: 3;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 52px;
 
     .form__name {
       margin-bottom: 21px;
-    }
-
-    .form__label {
-      padding-left: 0;
-      margin-bottom: 10px;
     }
   }
 
@@ -258,6 +269,14 @@
     &--mail {
       margin-bottom: 10px;
     }
+
+    .form__label {
+      margin-right: 12px;
+    }
+  }
+
+  .form__field--phone {
+    margin: 0 0 30px;
   }
 
   .form__item--decorated {
@@ -291,7 +310,7 @@
     }
 
     &::after {
-      top: -70px;
+      top: -80px;
     }
   }
 
@@ -310,7 +329,7 @@
 
   .form__submit {
     margin: 0;
-    padding: 18px 30px 14px 49px;
+    padding: 14px 30px 14px 25px;
     width: 324px;
   }
 }
@@ -318,6 +337,10 @@
 @media (min-width: $desktop-width) {
   .form {
     padding: 0 120px;
+
+    &__message {
+      margin-bottom: 65px;
+    }
 
     &__item {
       &--name {
@@ -345,6 +368,14 @@
     }
   }
 
+  .form__item--decorated {
+    &::after {
+      position: absolute;
+      content: "";
+      top: -80px;
+    }
+  }
+
   .form__item:nth-child(4) {
     margin-top: 10px;
     margin-bottom: 9px;
@@ -359,7 +390,8 @@
     }
 
     .form__input {
-      padding-left: 35px;
+      padding-left: 15px;
+      padding-top: 10px;
     }
 
     .form__label {
@@ -387,7 +419,6 @@
   .form__submit {
     width: 480px;
     padding: 18px 30px 14px;
-    margin-bottom: 100px;
   }
 
   .form__group {

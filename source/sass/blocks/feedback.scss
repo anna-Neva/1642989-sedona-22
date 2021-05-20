@@ -34,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__specification {
-    padding: 64px 0 88px;
+    padding: 60px 0 88px;
     // max-width: 434px;
     border: none;
     margin-bottom: 0;
@@ -46,15 +46,16 @@
 
   .feedback__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback__specification {
-    padding: 114px 0 61px;
+    padding: 114px 0 58px;
   }
 
   .feedback__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }

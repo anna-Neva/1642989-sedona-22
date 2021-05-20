@@ -3,7 +3,7 @@
 }
 
 .advice__title {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -50,15 +50,21 @@
     background-size: 32px 38px;
   }
 
-  &--food::before {
-    background-image: url("../img/icon-burger.svg");
-    background-size: 40px 35px;
+  &--food {
+    br {
+      display: none;
+    }
+
+    &::before {
+      background-image: url("../img/icon-burger.svg");
+      background-size: 40px 35px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .advice {
-    padding: 54px 31px 31px 36px;
+    padding: 54px 31px 60px 36px;
 
     &__description {
       br {
@@ -75,8 +81,7 @@
 
   .advice__item {
     position: relative;
-    padding: 0 0 27px;
-    padding-top: 90px;
+    padding: 90px 0 0;
     justify-self: center;
     text-align: center;
     margin: 0;
@@ -103,9 +108,18 @@
       background-size: 82px 76px;
     }
 
-    &--food::before {
-      background-image: url("../img/icon-burger.svg");
-      background-size: 76px 76px;
+    &--food {
+      max-width: 180px;
+      order: 2;
+
+      br {
+        display: block;
+      }
+
+      &::before {
+        background-image: url("../img/icon-burger.svg");
+        background-size: 76px 76px;
+      }
     }
   }
 
@@ -116,11 +130,6 @@
   .advice__item--souvenirs {
     max-width: 193px;
     order: 3;
-  }
-
-  .advice__item--food {
-    max-width: 180px;
-    order: 2;
   }
 }
 

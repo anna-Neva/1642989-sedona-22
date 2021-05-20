@@ -1,6 +1,6 @@
 .form-search {
   text-align: center;
-  padding-top: 23px;
+  padding-top: 19px;
   padding-bottom: 49px;
 }
 
@@ -29,18 +29,28 @@
 
 @media (min-width: $tablet-width) {
   .form-search {
-    padding: 58px 0 58px;
+    padding: 57px 0 57px;
   }
 
   .form-search__title {
     font-size: 30px;
-    margin: 0 0 30px;
+    margin: 0 0 40px;
     padding: 0;
   }
 
   .form-search__text {
-    width: 435px;
+    max-width: 100%;
     text-align: center;
-    margin: 0 auto 50px;
+    margin: 0 auto 35px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-search {
+    padding-bottom: 67px;
   }
 }
