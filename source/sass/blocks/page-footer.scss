@@ -2,6 +2,10 @@
   padding-top: 29px;
   padding-bottom: 23px;
   text-align: center;
+
+  &__form {
+    margin-left: 0;
+  }
 }
 
 .page-footer__hashtag {
@@ -12,6 +16,10 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &-form {
+    margin-top: 47px;
+  }
 }
 
 .page-footer__social {

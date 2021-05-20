@@ -4,7 +4,7 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  padding-left: 60px;
+  padding-left: 75px;
   cursor: pointer;
 }
 
@@ -37,9 +37,10 @@
 
 .checkbox__box {
   position: absolute;
-  width: 46px;
-  height: 46px;
-  top: -10px;
+  width: 55px;
+  height: 55px;
+  top: -17px;
+  right: 3px;
   border-radius: 7px;
   background-color: $grey;
   display: block;

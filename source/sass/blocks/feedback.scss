@@ -22,18 +22,26 @@
 }
 
 .feedback__specification {
-  margin: 0 auto 20px;
+  margin: 0 auto;
   text-align: center;
-  padding: 36px 0 37px;
+  padding: 36px 0 17px;
   border-bottom: 1px solid $grey-checked;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .feedback__specification {
-    padding-top: 64px 0 61px;
-    max-width: 434px;
+    padding: 64px 0 88px;
+    // max-width: 434px;
     border: none;
     margin-bottom: 0;
+
+    br {
+      display: block;
+    }
   }
 
   .feedback__title {
@@ -41,8 +49,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .feedback__specification {
-    padding-top: 114px 0 57px;
+    padding: 114px 0 61px;
+  }
+
+  .feedback__title {
+    margin-bottom: 30px;
   }
 }
