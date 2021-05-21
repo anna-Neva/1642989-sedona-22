@@ -36,7 +36,7 @@
   }
 
   &--even {
-    padding: 50px 16px 41px;
+    padding: 50px 16px 37px;
 
     .features__slogan {
       margin: 0;
@@ -170,13 +170,6 @@
 
   .features__img {
     grid-column: 2 / 4;
-  }
-
-  .features__advice {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column: 1 / - 1;
-    gap: 73px;
   }
 }
 

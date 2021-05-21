@@ -1,5 +1,4 @@
 .post__title {
-  // margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -18,7 +17,6 @@
 .post__likes {
   position: relative;
   margin: 0;
-  // padding-bottom: 6px;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -60,10 +58,6 @@
 
   .post__link {
     height: 267px;
-
-    // img {
-    //   padding-top: 5px;
-    // }
   }
 
   .post__desc {
@@ -81,7 +75,6 @@
   .post__likes {
     padding-bottom: 0;
     font-weight: bold;
-    // margin-right: 8px;
 
     svg {
       width: 23px;

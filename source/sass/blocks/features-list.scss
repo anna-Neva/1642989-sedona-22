@@ -70,10 +70,22 @@
       display: none;
     }
   }
+
+  .features-list__intro--short {
+    max-width: 148px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features-list {
-    padding: 43px 0 85px;
+    padding: 43px 0 65px;
+  }
+
+  .features-list__intro {
+    max-width: 290px;
+  }
+
+  .features-list__intro--short {
+    max-width: 268px;
   }
 }

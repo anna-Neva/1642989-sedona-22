@@ -61,7 +61,7 @@
   max-width: 285px;
 
   &--big {
-    margin: 0 9px 29px;
+    margin: 0 auto;
   }
 
   &--small {
@@ -110,8 +110,6 @@
 
   .promo__banner {
     position: relative;
-    // padding-top: 75px;
-    // padding-bottom: 93px;
 
     &::after {
       position: absolute;
@@ -162,16 +160,6 @@
     height: 78px;
     width: 457px;
   }
-
-  // .promo__banner--index {
-  //   padding-top: 75px;
-  //   padding-bottom: 93px;
-  // }
-
-  // .promo__banner--inner {
-  //   padding-top: 95px;
-  //   padding-bottom: 119px;
-  // }
 
   .promo__specification {
     padding: 60px 0 80px;
@@ -228,18 +216,6 @@
       }
     }
   }
-
-  // .promo__banner {
-  //   &--inner {
-  //     padding-top: 100px;
-  //     padding-bottom: 120px;
-  //   }
-
-  //   &--index {
-  //     padding-top: 80px;
-  //     padding-bottom: 87px;
-  //   }
-  // }
 
   .promo__description {
     margin-top: 55px;

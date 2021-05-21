@@ -7,6 +7,17 @@
   background-color: $white;
 }
 
+.page-header.no-js {
+  .page-header__nav {
+    display: block;
+  }
+
+  .page-header__toggle {
+    display: none;
+    background-image: url("../img/mobile-menu-close.svg");
+  }
+}
+
 .page-header--opened {
   padding-bottom: 56px;
 
@@ -16,10 +27,6 @@
 
   .page-header__nav {
     position: relative;
-  }
-
-  .page-header__toggle {
-    background-image: url("../img/mobile-menu-close.svg");
   }
 }
 
