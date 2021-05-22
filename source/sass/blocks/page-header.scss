@@ -7,26 +7,37 @@
   background-color: $white;
 }
 
-.page-header.no-js {
+.page-header.page-header--opened {
+  padding-bottom: 56px;
+
+  .page-header__toggle {
+    background-image: url("../img/mobile-menu-close.svg");
+  }
+
   .page-header__nav {
+    position: relative;
     display: block;
   }
 
-  .page-header__toggle {
-    display: none;
-    background-image: url("../img/mobile-menu-close.svg");
+  .page-header__list {
+    display: block;
   }
 }
 
-.page-header--opened {
+.page-header.page-header--no-js {
   padding-bottom: 56px;
+
+  .page-header__nav {
+    position: relative;
+    display: block;
+  }
 
   .page-header__list {
     display: block;
   }
 
-  .page-header__nav {
-    position: relative;
+  .page-header__toggle {
+    display: none;
   }
 }
 
