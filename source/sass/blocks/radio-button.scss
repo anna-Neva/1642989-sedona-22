@@ -1,6 +1,6 @@
 .radio-button__label {
   position: relative;
-  padding-left: 60px;
+  padding-left: 77px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -11,8 +11,8 @@
   position: absolute;
   left: 0;
   top: -12px;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: $grey;
 
@@ -52,7 +52,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio-button__iteml {
-    margin-bottom: 51px;
+  .radio-button {
+    &__item {
+      margin-bottom: 51px;
+    }
+
+    &__label {
+      padding-left: 75px;
+    }
   }
 }

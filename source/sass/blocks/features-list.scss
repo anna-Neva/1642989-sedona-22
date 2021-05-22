@@ -18,16 +18,16 @@
 }
 
 .features-list__slogan {
-  margin: 0 0 15px;
-  font-size: 21px;
-  line-height: 15px;
+  margin: 0 0 11px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 25px;
 }
 
 .features-list__description {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   display: block;
 }
 
@@ -50,7 +50,8 @@
 
   .features-list__slogan {
     font-size: 21px;
-    line-height: 21px;
+    line-height: 26px;
+    padding-top: 0;
   }
 
   .features-list__item {
@@ -69,10 +70,22 @@
       display: none;
     }
   }
+
+  .features-list__intro--short {
+    max-width: 148px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features-list {
-    padding: 43px 0 62px;
+    padding: 43px 0 65px;
+  }
+
+  .features-list__intro {
+    max-width: 290px;
+  }
+
+  .features-list__intro--short {
+    max-width: 268px;
   }
 }

@@ -1,5 +1,5 @@
 .posts__item {
-  padding: 22px 20px 15px 20px;
+  padding: 22px 20px 18px;
   border-bottom: 1px solid $grey-hover;
 
   &:first-child {
@@ -10,7 +10,7 @@
 @media (min-width: $tablet-width) {
   .posts {
     padding: 0 60px;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
   }
 
   .posts__list {

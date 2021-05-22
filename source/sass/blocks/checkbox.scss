@@ -4,7 +4,7 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  padding-left: 60px;
+  padding-left: 75px;
   cursor: pointer;
 }
 
@@ -37,9 +37,10 @@
 
 .checkbox__box {
   position: absolute;
-  width: 46px;
-  height: 46px;
-  top: -10px;
+  width: 55px;
+  height: 55px;
+  top: -17px;
+  left: 0;
   border-radius: 7px;
   background-color: $grey;
   display: block;
@@ -60,15 +61,46 @@
   }
 
   .checkbox__item {
-    width: 50%;
     margin-bottom: 62px;
+
+    &:nth-child(4n+1) {
+      width: 57%;
+    }
+
+    &:nth-child(4n+2) {
+      width: 43%;
+    }
+
+    &:nth-child(4n+3) {
+      width: 57%;
+    }
+
+    &:nth-child(4n+4) {
+      width: 43%;
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox__item {
-    width: 25%;
     margin-bottom: 73px;
+
+    &:nth-child(4n+1) {
+      width: 27%;
+    }
+
+    &:nth-child(4n+2) {
+      width: 27%;
+    }
+
+    &:nth-child(4n+3) {
+      width: 25%;
+    }
+
+    &:nth-child(4n+4) {
+      width: 21%;
+    }
   }
 
   .checkbox__box {

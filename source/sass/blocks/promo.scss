@@ -31,7 +31,7 @@
 
 
   &--index {
-    padding: 86px 0 85px;
+    padding: 90px 0 85px;
     background-image: url("../img/promo-banner-mobile-index.jpg");
     background-color: $blue;
 
@@ -53,42 +53,64 @@
 }
 
 .promo__slogan {
-  margin: 0;
-  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  max-width: 285px;
+
+  &--big {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &--small {
+    margin: 0 9px 31px;
+  }
 }
 
 .promo__intro {
-  margin: 0;
+  margin: 0 auto;
   font-size: 14px;
-  line-height: 24px;
   color: $light-black;
   text-align: center;
   text-transform: uppercase;
+
+  &--small {
+    line-height: 26px;
+  }
+
+  &--big {
+    line-height: 24px;
+  }
+
+  br {
+    display: none;
+  }
 }
 
 .promo__specification {
   margin: 0 auto;
   text-align: center;
-  padding: 32px 9px 20px 12px;
+  padding: 30px 14px 32px 18px;
   max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .promo__description {
     margin-top: 44px;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
     max-width: 520px;
+    padding: 0;
+
+    br {
+      display: block;
+    }
   }
 
   .promo__banner {
     position: relative;
-    padding-top: 86px;
-    padding-bottom: 117px;
 
     &::after {
       position: absolute;
@@ -108,6 +130,8 @@
     }
 
     &--index {
+      padding-top: 75px;
+      padding-bottom: 93px;
       background-image: url("../img/promo-banner-tablet-index.jpg");
       background-size: cover;
 
@@ -117,6 +141,8 @@
     }
 
     &--inner {
+      padding-top: 95px;
+      padding-bottom: 119px;
       background-image: url("../img/promo-banner-tablet-inner.jpg");
       background-size: cover;
 
@@ -137,26 +163,41 @@
   }
 
   .promo__specification {
-    padding: 65px 0 65px;
+    padding: 60px 0 80px;
     max-width: 458px;
     margin: 0 auto;
   }
 
-  .promo__slogan {
-    font-size: 30px;
+  .promo__intro {
+    max-width: 100%;
+
+    br {
+      display: block;
+    }
   }
 
-  .promo__slogan--small {
-    font-size: 21px;
+  .promo__slogan {
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 33px;
+    max-width: 100%;
+
+    &--small {
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__banner {
-    padding-top: 95px;
+    padding-top: 100px;
     padding-bottom: 120px;
 
     &--index {
+      padding-top: 80px;
+      padding-bottom: 87px;
       background-image: url("../img/promo-banner-desktop-index.jpg");
       background-size: cover;
 
@@ -166,6 +207,8 @@
     }
 
     &--inner {
+      padding-top: 100px;
+      padding-bottom: 120px;
       background-image: url("../img/promo-banner-desktop-inner.jpg");
       background-size: cover;
 
@@ -175,11 +218,13 @@
     }
   }
 
-  .promo__specification {
-    padding: 102px 0 67px;
+  .promo__description {
+    margin-top: 55px;
+    margin-bottom: 41px;
+    max-width: 493px;
   }
 
-  .promo__description {
-    max-width: 493px;
+  .promo__specification {
+    padding: 102px 0 80px;
   }
 }
