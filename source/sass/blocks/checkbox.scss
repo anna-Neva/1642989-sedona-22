@@ -6,6 +6,7 @@
   position: relative;
   padding-left: 60px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .checkbox__box svg {
@@ -62,6 +63,27 @@
   .checkbox__item {
     width: 50%;
     margin-bottom: 62px;
+
+    &:nth-child(4n+1) {
+      width: 57%;
+    }
+
+    &:nth-child(4n+2) {
+      width: 43%;
+    }
+
+    &:nth-child(4n+3) {
+      width: 57%;
+    }
+
+    &:nth-child(4n+4) {
+      width: 43%;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 54px;
+    }
   }
 }
 

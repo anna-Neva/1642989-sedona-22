@@ -66,6 +66,25 @@
   background-color: $blue;
 }
 
+@media(max-width: $tablet-width - 1px) {
+  .page-header.page-header--no-js {
+    padding-bottom: 56px;
+
+    .page-header__nav {
+      position: relative;
+      display: block;
+    }
+
+    .page-header__list {
+      display: block;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: auto;
@@ -92,4 +111,12 @@
     display: flex;
     padding: 16px 0 14px;
   }
+
+  // .page-header.page-header--no-js {
+  //   .page-header__list {
+  //    display: flex;
+  //    flex-wrap: wrap;
+  //    justify-content: flex-end;
+  //   }
+  // }
 }
