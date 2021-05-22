@@ -1,9 +1,10 @@
 .post__title {
-  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 9px;
 }
 
 .post__text {
@@ -16,7 +17,6 @@
 .post__likes {
   position: relative;
   margin: 0;
-  padding-bottom: 6px;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -44,6 +44,10 @@
 @media (min-width: $tablet-width) {
   .post {
     background-color: $grey;
+
+    &--title {
+      margin-top: 17px;
+    }
   }
 
   .post--promo {
@@ -60,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 0 28px 5px 20px;
   }
 
   .post__item {
@@ -69,9 +73,16 @@
   }
 
   .post__likes {
+    padding-bottom: 0;
+    font-weight: bold;
+
     svg {
-      margin-right: 9px;
+      width: 23px;
     }
+  }
+
+  .post__title {
+    margin-top: 15px;
   }
 }
 

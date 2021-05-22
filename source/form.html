@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <div class="container">
-      <header class="page-header page-header--opened">
+      <header class="page-header page-header--no-js">
         <nav class="page-header__nav">
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">
@@ -59,7 +59,7 @@
             </h2>
             <div class="feedback__description">
               Помогите нашим отелям стать лучше!
-              оставьте отзыв о них, а также о
+              оставьте отзыв о них, <br> а также о
               посещенных вами достопримечательностях
             </div>
           </section>
@@ -94,7 +94,10 @@
             </legend>
             <div class="form__group">
               <p class="form__field form__field--column form__field--phone">
-                <label  class="form__label" for="contact-phone">
+                <label  class="form__label form__label--inner" for="contact-phone">
+                  Контактный телефон*:
+                </label>
+                <label  class="form__label form__label--desktop" for="contact-phone">
                   Телефон*:
                 </label>
                 <input class="form__input text-input" type="tel" name="phone" id="contact-phone" placeholder="Введите телефон">
@@ -158,7 +161,7 @@
                     </svg>
                   </span>
                   <span>
-                    Мост дьявола
+                    Мост Дьявола
                   </span>
                 </label>
               </li>
@@ -171,7 +174,7 @@
                     </svg>
                   </span>
                   <span>
-                    Гора-колокол
+                    Гора-Колокол
                   </span>
                 </label>
               </li>
@@ -225,13 +228,13 @@
               <sup>
                 *
               </sup>
-              -Обязательные поля
+              &mdash; Обязательные поля
             </span>
           </div>
         </form>
       </main>
-      <footer class="page-footer">
-        <p class="page-footer__hashtag">
+      <footer class="page-footer page-footer--form">
+        <p class="page-footer__hashtag page-footer__hashtag-form">
           #visitSEDONA
         </p>
         <ul class="page-footer__social social reset-list">

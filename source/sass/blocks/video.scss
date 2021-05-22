@@ -1,3 +1,7 @@
+.video {
+  padding-bottom: 116px;
+}
+
 .video__link {
   display: block;
   height: 201px;
@@ -17,7 +21,7 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding: 32px 27px 33px;
+  padding: 33px 27px 27px;
 }
 
 .video__intro {
@@ -26,7 +30,7 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 27px;
+  padding-bottom: 33px;
   max-width: 266px;
 }
 
@@ -65,8 +69,8 @@
   color: $video-button-grey;
 
   &--replay {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 22px;
+    margin-top: 22px;
     margin-bottom: 20px;
 
     &:hover svg,
@@ -81,8 +85,8 @@
 
   &--subtitle {
     margin-left: auto;
-    margin-right: 31px;
-    margin-top: 20px;
+    margin-right: 21px;
+    margin-top: 25px;
     color: $video-button-grey;
 
     &:hover,
@@ -96,9 +100,9 @@
   }
 
   &--fullscreen {
-    margin-right: 20px;
+    margin-right: 24px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 23px;
     color: $video-button-grey;
 
     &:hover,
@@ -146,7 +150,7 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding: 0 60px 76px;
+    padding: 0 60px 40px;
   }
 
   .video__scale {
@@ -209,26 +213,69 @@
 
     &--subtitle {
       margin-left: 42px;
-      margin-right: 31px;
+      margin-right: 41px;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
+    }
+
+    &--fullscreen {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
     }
 
     &--thumb {
       top: -3px;
+      margin-left: 30px;
     }
   }
 
   .video__slogan {
     font-size: 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .video__intro {
     max-width: 445px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .video {
     padding-bottom: 85px;
+
+    &__slogan {
+      padding-bottom: 30px;
+    }
+
+    &__button {
+      &--subtitle {
+        margin-right: 45px;
+      }
+
+      &--replay {
+        margin-right: 45px;
+      }
+
+      &--thumb {
+        margin-left: 0;
+      }
+    }
   }
 }

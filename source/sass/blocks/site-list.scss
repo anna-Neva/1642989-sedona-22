@@ -89,6 +89,19 @@
       background-color: transparent;
     }
   }
+
+  .site-list__link--active {
+    color: $light-brown;
+
+    &:hover,
+    &:focus {
+      color: $dark-brown;
+    }
+
+    &:active {
+      color: rgba($light-brown, 0.3);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
