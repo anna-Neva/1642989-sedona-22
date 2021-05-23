@@ -24,23 +24,6 @@
   }
 }
 
-.page-header.page-header--no-js {
-  padding-bottom: 56px;
-
-  .page-header__nav {
-    position: relative;
-    display: block;
-  }
-
-  .page-header__list {
-    display: block;
-  }
-
-  .page-header__toggle {
-    display: none;
-  }
-}
-
 .page-header__nav {
   width: 100%;
 }
@@ -129,12 +112,4 @@
     display: flex;
     padding: 5px 0 10px;
   }
-
-  // .page-header.page-header--no-js {
-  //   .page-header__list {
-  //    display: flex;
-  //    flex-wrap: wrap;
-  //    justify-content: flex-end;
-  //   }
-  // }
 }
